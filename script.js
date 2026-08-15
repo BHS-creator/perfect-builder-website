@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const menu=document.querySelector(".menu");const nav=document.querySelector(".nav nav");if(menu&&nav){menu.addEventListener("click",function(){nav.classList.toggle("open");});nav.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");});});}});
