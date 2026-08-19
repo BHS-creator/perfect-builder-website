@@ -1,0 +1,1 @@
+document.querySelectorAll('.faq-item button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;item.classList.toggle('open');btn.querySelector('span').textContent=item.classList.contains('open')?'−':'+';}));
