@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<title>Contact Us | Perfect Building Contractor LTD</title>
+<style>
+:root{
+  --green:#086b4f;
+  --green2:#07583f;
+  --lime:#baff7a;
+  --text:#185f4c;
+  --soft:#f7fbfa;
+  --gold:#ffd32a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#444;background:#fff}
+a{text-decoration:none;color:inherit}
+.top-strip{height:24px;background:#fff;color:#16684f;text-align:center;font-size:11px;font-weight:600;padding:6px 4px}
+.header-main{height:88px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4%}
+.logo{width:64px;height:64px;border:1px solid rgba(255,255,255,.55);border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.logo img{width:100%;height:100%;object-fit:cover}
+.company{font-size:12px;font-weight:600}
+.socials{color:var(--lime);font-weight:700;font-size:16px;letter-spacing:4px}
+.nav{height:44px;background:var(--green);color:#fff;display:flex;align-items:center;gap:28px;padding:0 3.5%;font-size:12px;border-top:1px solid rgba(255,255,255,.12)}
+.nav a.active{color:var(--lime)}
+.phone{margin-left:auto;background:#fff;color:#222;padding:9px 28px;min-width:145px;text-align:center}
+.hero{
+  min-height:255px;
+  background:linear-gradient(rgba(3,103,76,.84),rgba(3,103,76,.84)),url("assets/hero.jpg") center 55%/cover no-repeat;
+  color:#fff;
+  padding:10px 2.2% 32px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.hero h1{font-size:30px;line-height:1.15;margin:0;max-width:760px;text-transform:uppercase;font-weight:800}
+.hero .typed{color:var(--lime);font-size:25px;line-height:1.15;font-weight:800;min-height:32px;margin-top:6px}
+.hero p{font-size:12px;line-height:1.5;max-width:760px;margin:2px 0 22px}
+.hero-actions{display:flex;gap:14px}
+.btn-outline{border:1px solid #fff;color:#fff;padding:10px 26px;font-size:12px;background:transparent}
+.quote{background:var(--green);color:#fff;padding:36px 5% 40px}
+.quote h2{font-size:29px;margin:0 0 24px}
+.quote .lead{font-size:12px;margin-bottom:28px}
+.form{max-width:1000px;margin:0 auto}
+input,textarea{width:100%;border:0;background:#fff;padding:12px 10px;font-size:12px;margin:7px 0;color:#333;outline:none}
+textarea{height:116px;resize:vertical}
+.group-title{font-size:12px;font-weight:700;margin-top:14px;margin-bottom:5px}
+.radio-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px 70px;font-size:12px}
+.radio-grid label{display:flex;gap:7px;align-items:center}
+.radio-grid input{width:auto;margin:0}
+.send{margin-top:13px;border:0;background:#075d43;color:#fff;padding:11px 26px;font-size:12px}
+.testimonials{padding:58px 5% 65px;background:#fff;text-align:center}
+.small-title{color:var(--green);font-size:18px;margin-bottom:10px}
+.testimonials h2{font-size:31px;margin:0 0 30px;color:#222}
+.slider-wrap{max-width:1000px;margin:0 auto;position:relative;overflow:hidden}
+.test-track{display:flex;transition:transform .7s ease}
+.test-slide{min-width:50%;padding:0 8px}
+.test-card{height:305px;border:8px solid #000;border-radius:7px;background:#fff;padding:38px 28px 25px;text-align:center;position:relative;display:flex;flex-direction:column;justify-content:center}
+.quote-mark{position:absolute;top:22px;left:34px;font-size:56px;color:var(--green);font-weight:900;line-height:.7}
+.test-card h3{font-size:14px;color:var(--green);margin:28px 0 10px}
+.test-card p{font-size:12px;line-height:1.8;color:#36735f;margin:0 auto;max-width:310px}
+.stars{color:#f4d313;font-size:15px;margin-top:12px;letter-spacing:1px}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#9a9a9a;font-size:30px;z-index:5;cursor:pointer}
+.arrow.left{left:-2px}.arrow.right{right:-2px}
+.dots{display:flex;justify-content:center;gap:9px;margin-top:18px}
+.dot{width:6px;height:6px;background:#ddd;border-radius:50%}
+.dot.active{background:#111}
+.projects{padding:10px 0 78px;background:#fff}
+.projects-head{max-width:1100px;margin:0 auto;padding:0 4%;display:flex;align-items:end;justify-content:space-between}
+.projects-head .kicker{color:var(--green);font-size:18px;margin-bottom:14px}
+.projects-head h2{margin:0;font-size:31px;color:#222}
+.view-projects{background:var(--green);color:#fff;padding:13px 28px;font-size:11px}
+.project-slider{margin-top:35px;overflow:hidden;position:relative}
+.project-track{display:flex;transition:transform .8s ease}
+.project-slide{min-width:50%;height:335px;position:relative;overflow:hidden}
+.project-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.project-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;border:0;background:transparent;color:#fff;font-size:34px;cursor:pointer;text-shadow:0 1px 4px #000}
+.project-arrow.left{left:10px}.project-arrow.right{right:10px}
+.project-dots{display:flex;justify-content:center;gap:8px;margin-top:10px}
+.project-dot{width:6px;height:6px;border-radius:50%;background:#ddd}
+.project-dot.active{background:#111}
+.location{padding:65px 5% 55px;background:#fff}
+.location-title{text-align:center;color:var(--green);font-size:17px}
+.location h2{text-align:center;font-size:31px;color:var(--green);margin:10px 0 45px}
+.location-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}
+.location-text{text-align:center}
+.location-text h3{font-size:25px;color:var(--green);margin:0 0 15px}
+.location-text h4{color:var(--green);font-size:16px;margin:17px 0 7px}
+.location-text p{font-size:12px;line-height:1.7;margin:0}
+.appointment{display:inline-block;background:var(--green);color:#fff;padding:11px 26px;font-size:12px;margin-top:22px}
+.map{height:380px;border:0;overflow:hidden;background:#eee}
+.map iframe{width:100%;height:100%;border:0}
+.footer{background:var(--green);color:#fff;padding:42px 4%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px;font-size:12px}
+.footer h3{font-size:15px;margin:0 0 18px}
+.footer p,.footer li{line-height:1.8}
+.footer ul{list-style:none;padding:0;margin:0}
+.bottom-bar{position:fixed;left:0;right:0;bottom:0;height:58px;background:var(--green);display:flex;justify-content:center;gap:14px;padding:8px 14px;z-index:1000}
+.bottom-bar a{width:200px;background:#fff;color:#175f4b;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
+.top-btn{position:fixed;right:12px;bottom:66px;background:var(--green);color:#fff;border:0;width:27px;height:27px;z-index:1001}
+@media(max-width:700px){
+  .top-strip{font-size:10px}
+  .header-main{height:88px}
+  .socials{font-size:14px;letter-spacing:1px}
+  .nav{gap:18px;font-size:11px;white-space:nowrap;overflow:hidden}
+  .phone{display:none}
+  .hero{min-height:224px;padding:5px 14px 28px}
+  .hero h1{font-size:28px}
+  .hero .typed{font-size:23px}
+  .hero p{font-size:11px}
+  .hero-actions{gap:14px}
+  .radio-grid{gap:5px 40px}
+  .test-slide{min-width:100%}
+  .test-card{height:310px}
+  .projects-head{padding:0 28px}
+  .projects-head h2{font-size:28px}
+  .view-projects{padding:12px 22px}
+  .project-slide{min-width:100%;height:360px}
+  .location-grid{grid-template-columns:1fr}
+  .map{height:350px}
+  .footer{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:18px;padding:38px 0;font-size:10.5px}
+  .footer h3{font-size:13px}
+  .bottom-bar a{width:200px}
+}
+
+
+
+/* FINAL HEADER FIX ONLY: keep the complete top area fixed during scroll. */
+.top-strip{position:fixed;top:0;left:0;right:0;z-index:5000}
+.header-main{position:fixed;top:35px;left:0;right:0;z-index:4999}
+.nav{position:fixed;top:122px;left:0;right:0;z-index:4998}
+body{padding-top:166px}
+
+</style>
+
+
+<style>
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+</style>
+
+</head>
+<body>
+
+<div class="top-strip">Get 5% off this month when you try our services! | Fully Insured Services | 5 Years Work Guarantee</div>
+
+<header class="header-main">
+  <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Perfect Building Contractor LTD"></a>
+  <div class="company">Perfect Building Contractor LTD</div>
+  <div class="socials">f&nbsp;&nbsp;♥&nbsp;&nbsp;in&nbsp;&nbsp;G&nbsp;&nbsp;✉</div>
+</header>
+
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services⌄</a>
+  <a href="about.html">About</a>
+  <a class="active" href="contact.html">Contact Us</a>
+  <a href="blog.html">Blog</a>
+  <div class="phone">☎ 7391931969</div>
+</nav>
+
+<section class="hero">
+  <h1>THINKING ABOUT HOME RENOVATION, NEW BUILD, MAINTENANCE OR COMMERCIAL BUILDS</h1>
+  <div class="typed" id="typed"></div>
+  <p>Helping build and renovate residential and commercial spaces in Sheffield and areas nearby West Yorkshire and South Yorkshire.</p>
+  <div class="hero-actions">
+    <a class="btn-outline" href="#quote">GET QUOTE NOW</a>
+    <a class="btn-outline" href="tel:+447391931969">CALL US</a>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <h2>Request a Quote</h2>
+  <div class="lead">Ready to Work Together? Build a project with us!</div>
+  <form class="form" action="https://formsubmit.co/info@perfectbuilders.uk" method="POST">
+<input type="hidden" name="_subject" value="New Website Enquiry - Perfect Builders">
+<input type="hidden" name="_template" value="table">
+    <input name="name" placeholder="Enter your name" required>
+    <input name="email" type="email" placeholder="Enter your email address" required>
+    <input name="phone" type="tel" placeholder="Enter your phone number" required>
+    <input name="property" placeholder="Enter your address">
+
+    <div class="group-title">What work are you considering at your property : <span>*</span></div>
+    <div class="radio-grid">
+      <label><input type="radio" name="work"> Loft conversion</label>
+      <label><input type="radio" name="work"> Garage conversion</label>
+      <label><input type="radio" name="work"> House renovation</label>
+      <label><input type="radio" name="work"> New Build</label>
+      <label><input type="radio" name="work"> Kitchen Fittings</label>
+      <label><input type="radio" name="work"> Roofing</label>
+      <label><input type="radio" name="work"> Bathroom Installation</label>
+      <label><input type="radio" name="work"> Laminate Flooring</label>
+      <label><input type="radio" name="work"> Painting</label>
+      <label><input type="radio" name="work"> Other</label>
+    </div>
+
+    <div class="group-title">How did you hear about us ? <span>*</span></div>
+    <div class="radio-grid">
+      <label><input type="radio" name="hear"> Social media</label>
+      <label><input type="radio" name="hear"> Online search</label>
+      <label><input type="radio" name="hear"> Referral</label>
+      <label><input type="radio" name="hear"> Other</label>
+    </div>
+
+    <textarea name="message" maxlength="100" placeholder="Message"></textarea>
+    <button type="submit" class="send">SEND MESSAGE</button>
+  </form>
+</section>
+
+<section class="testimonials">
+  <div class="small-title">What Our Clients Say</div>
+  <h2>Testimonials</h2>
+
+  <div class="slider-wrap">
+    <button class="arrow left" id="tPrev">‹</button>
+    <div class="test-track" id="testTrack">
+      <div class="test-slide"><div class="test-card"><div class="quote-mark">“</div><h3>James Walsh</h3><p>I recently had Perfect Building Contractor Ltd do some structural repairs on my property. Their attention to detail and commitment to quality workmanship were impressive. I'm delighted with the outcome, and I wouldn't hesitate to hire them again for my next building project.</p><div class="stars">★★★★★</div></div></div>
+      <div class="test-slide"><div class="test-card"><div class="quote-mark">“</div><h3>Maisie Thompson</h3><p>I had a kitchen extension done by Perfect Building Contractor Ltd, and it transformed my home. The team was incredibly skilled, and the project was managed seamlessly from start to finish. I'm grateful for their professionalism and the fantastic work they delivered.</p><div class="stars">★★★★★</div></div></div>
+      <div class="test-slide"><div class="test-card"><div class="quote-mark">“</div><h3>David Wilson</h3><p>I engaged Perfect Building Contractor Ltd for a complete home remodel, and the results are stunning. They demonstrated great expertise and were always willing to listen to my ideas. Their craftsmanship is top-notch, and I'm thrilled with my newly renovated home.</p><div class="stars">★★★★★</div></div></div>
+      <div class="test-slide"><div class="test-card"><div class="quote-mark">“</div><h3>Amelia Edward</h3><p>I hired the team Perfect Building Contractor Ltd for a renovation project, and I couldn't be happier with the results. They were professional, efficient, and completed the job on time and within budget. I highly recommend their services for any building work you need.</p><div class="stars">★★★★★</div></div></div>
+    </div>
+    <button class="arrow right" id="tNext">›</button>
+  </div>
+  <div class="dots" id="testDots"></div>
+</section>
+
+<section class="projects">
+  <div class="projects-head">
+    <div><div class="kicker">Projects</div><h2>Our Projects</h2></div>
+    <a class="view-projects" href="projects.html">VIEW PROJECTS</a>
+  </div>
+  <div class="project-slider">
+    <button class="project-arrow left" id="pPrev">‹</button>
+    <div class="project-track" id="projectTrack">
+      <div class="project-slide"><img src="assets/project1.jpg" alt="Project"></div>
+      <div class="project-slide"><img src="assets/project2.jpg" alt="Project"></div>
+      <div class="project-slide"><img src="assets/project3.jpg" alt="Project"></div>
+      <div class="project-slide"><img src="assets/project4.jpg" alt="Project"></div>
+      <div class="project-slide"><img src="assets/project5.jpg" alt="Project"></div>
+      <div class="project-slide"><img src="assets/project6.jpg" alt="Project"></div>
+    </div>
+    <button class="project-arrow right" id="pNext">›</button>
+  </div>
+  <div class="project-dots" id="projectDots"></div>
+</section>
+
+<section class="location">
+  <div class="location-title">Our Location</div>
+  <h2>Contact Details</h2>
+  <div class="location-grid">
+    <div class="location-text">
+      <h3>United Kingdom Head Office</h3>
+      <h4>Address:</h4>
+      <p>2 Lopham Street, Sheffield, S3 9JS</p>
+      <h4>Phone</h4>
+      <p>+44 739-193-1969</p>
+      <p>03301338689</p>
+      <h4>Email:</h4>
+      <p>info@perfectbuilder.uk<br>perfectbuilder95@yahoo.com</p>
+      <a class="appointment" href="mailto:info@perfectbuilder.uk">GET APPOINTMENT</a>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=2+Lopham+Street,+Sheffield,+S3+9JS&output=embed" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <h3>Build with Perfect Building Contractor LTD.</h3>
+    <p>Perfect Building Contractor Ltd - your trusted builders in Sheffield, offering services all around South Yorkshire, West Yorkshire, Leeds, Rotherham, Doncaster, Halifax and Bradford. With 30+ years of experience, we have successfully completed more than 300+ projects in both residential and commercial domain. With fully insured and work cover services, we offer 5 years of Work Guarantee. Contact us today!</p>
+  </div>
+  <div>
+    <h3>Our Services</h3>
+    <ul><li>New Home Builder</li><li>Loft Conversions</li><li>Garage Conversions</li><li>Building Alterations</li><li>Home Renovation</li><li>Roofing</li><li>Commercial Building Services</li><li>House Building Services</li></ul>
+  </div>
+  <div>
+    <h3>Office in UK</h3>
+    <p>📍 2 Lopham Street,<br>Sheffield, S3 9JS</p>
+    <p>☎ (+44) 739-193-1969<br>☎ 03301338689<br>✉ info@perfectbuilder.uk<br>perfectbuilder95@yahoo.com</p>
+    <p>Mon-Sat 9:00 AM - 5:00 PM,<br>Sunday - 9:00 AM - 4:00 PM</p>
+  </div>
+  <div>
+    <h3>Our Locations</h3>
+    <ul><li>South Yorkshire</li><li>West Yorkshire</li><li>Sheffield</li><li>Rotherham</li><li>Halifax</li><li>Doncaster</li><li>Bradford</li><li>Leeds</li></ul>
+  </div>
+</footer>
+
+<div class="bottom-bar">
+  <a href="mailto:info@perfectbuilder.uk">✉ Contact</a>
+  <a href="tel:+447391931969">☎ Call</a>
+</div>
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⌃</button>
+
+<script>
+/* Hero typing: word-by-word, then next phrase */
+const typed = document.getElementById('typed');
+const phrases = ['Get free consultation','We’re here to help'];
+let phraseIndex = 0, wordIndex = 0, typingTimer;
+function typePhrase(){
+  const words = phrases[phraseIndex].split(' ');
+  typed.textContent = '';
+  wordIndex = 0;
+  clearTimeout(typingTimer);
+  function addWord(){
+    if(wordIndex < words.length){
+      typed.textContent += (wordIndex ? ' ' : '') + words[wordIndex++];
+      typingTimer = setTimeout(addWord, 280);
+    }else{
+      typingTimer = setTimeout(()=>{
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typePhrase();
+      }, 2600);
+    }
+  }
+  addWord();
+}
+typePhrase();
+
+/* Testimonials: one card step at a time, while showing two on desktop */
+const testTrack = document.getElementById('testTrack');
+const testSlides = [...document.querySelectorAll('.test-slide')];
+const testDots = document.getElementById('testDots');
+let ti = 0;
+const testCount = testSlides.length;
+function renderTest(){
+  const desktop = window.innerWidth > 700;
+  const visible = desktop ? 2 : 1;
+  const max = Math.max(0, testCount - visible);
+  if(ti > max) ti = 0;
+  testTrack.style.transform = `translateX(-${ti * (100 / visible)}%)`;
+  testDots.innerHTML = '';
+  for(let i=0;i<=max;i++){
+    const d=document.createElement('span');
+    d.className='dot'+(i===ti?' active':'');
+    testDots.appendChild(d);
+  }
+}
+function nextTest(){ ti++; renderTest(); }
+document.getElementById('tNext').onclick=()=>{ti++;renderTest()};
+document.getElementById('tPrev').onclick=()=>{ti=ti<=0?(window.innerWidth>700?testCount-2:testCount-1):ti-1;renderTest()};
+setInterval(nextTest,3500);
+window.addEventListener('resize',renderTest);
+renderTest();
+
+/* Projects: two-at-a-time desktop slider */
+const projectTrack=document.getElementById('projectTrack');
+const projectSlides=[...document.querySelectorAll('.project-slide')];
+const projectDots=document.getElementById('projectDots');
+let pi=0;
+function renderProjects(){
+  const desktop = window.innerWidth > 700;
+  const visible = desktop ? 2 : 1;
+  const max=Math.max(0,projectSlides.length-visible);
+  if(pi>max) pi=0;
+  projectTrack.style.transform=`translateX(-${pi*(100/visible)}%)`;
+  projectDots.innerHTML='';
+  for(let i=0;i<=max;i++){
+    const d=document.createElement('span');
+    d.className='project-dot'+(i===pi?' active':'');
+    projectDots.appendChild(d);
+  }
+}
+function nextProject(){pi++;renderProjects();}
+document.getElementById('pNext').onclick=()=>{pi++;renderProjects()};
+document.getElementById('pPrev').onclick=()=>{pi=pi<=0?(window.innerWidth>700?projectSlides.length-2:projectSlides.length-1):pi-1;renderProjects()};
+setInterval(nextProject,3200);
+window.addEventListener('resize',renderProjects);
+renderProjects();
+</script>
+</body>
+</html>
