@@ -36,3 +36,21 @@ img{max-width:100%;height:auto}
 .promo{position:fixed;top:0;left:0;right:0;z-index:5000}
 header{position:fixed;top:35px;left:0;right:0;z-index:4999}
 body{padding-top:166px}
+
+/* FINAL FOOTER FIX — no blue links or underlines */
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+}
+
+footer p,
+footer li,
+footer span {
+  color: #ffffff;
+}
