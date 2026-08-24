@@ -1,7 +1,25 @@
-Perfect Building Contractor LTD - Home + Projects + Services + About
+PERFECT BUILDING CONTRACTOR LTD — FULL SEO SITE PACKAGE
+
+Created: 33 HTML pages.
+
+Includes:
+- SEO homepage
+- 16 service pages
+- 8 location pages
+- Services index
+- Blog index
+- 5 SEO blog articles
+- Thank-you page
+- robots.txt
+- sitemap.xml
+
+UPLOAD:
+1. Keep your existing style.css, script.js and assets/ folder.
+2. Upload these files into the website root.
+3. Verify every business claim, address, phone, email, guarantee, experience/project figure and review before publishing.
+4. Verify the FormSubmit redirect URL in the homepage.
+5. Verify the domain in Google Search Console and submit:
+   https://www.perfectbuilders.uk/sitemap.xml
 
 IMPORTANT:
-- index.html, projects.html, services.html, style.css, project.css, service.css, service.js and script.js are copied from the uploaded working files unchanged.
-- about.html is the new About page requested.
-- Open index.html first in VS Code / browser.
-- The Contact and Blog pages are intentionally not added/changed yet; those are the next pages to build.
+Google ranking is not guaranteed. Google controls crawling, indexing and ranking. The location/service pages are written to provide useful content rather than simply repeating keywords.
