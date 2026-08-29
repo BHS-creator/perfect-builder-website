@@ -297,11 +297,7 @@
         <h2>Schedule Free Consultation</h2>
         <p>Ready to work together? Tell us about your project.</p>
 
-        <form action="https://formsubmit.co/info@perfectbuilders.uk" method="POST">
-          <input type="hidden" name="_subject" value="New Contact Form Enquiry - Perfect Builders">
-          <input type="hidden" name="_captcha" value="true">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://www.perfectbuilders.uk/thank-you.html">
+        <form id="contactForm">
 
           <label for="name">Your name</label>
           <input id="name" type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
@@ -338,7 +334,8 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Tell us about your project" rows="5"></textarea>
 
-          <button class="btn green" type="submit">SEND MESSAGE</button>
+          <button class="btn green" id="submitBtn" type="submit">SEND MESSAGE</button>
+          <p id="formStatus" role="status" aria-live="polite" style="margin-top:12px"></p>
         </form>
       </div>
     </section>
@@ -403,6 +400,77 @@
 
     <div class="copyright">Copyright © 2026 Perfect Building Contractor LTD | Design By Website BHS </div>
   </footer>
+
+
+  <!-- Supabase contact-form connection -->
+  <script>
+    /*
+      IMPORTANT: Replace ONLY these two values with your Supabase project
+      URL and the browser-safe anon/publishable key. Never put a service_role
+      or secret key in this file.
+    */
+    const SUPABASE_URL = "https://tbbnuusdslerhircsulg.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_KkuV1RbgnKPy45NSOwCLtA_r7LK2hTk";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      const button = document.getElementById("submitBtn");
+      const status = document.getElementById("formStatus");
+
+      if (!form) return;
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (SUPABASE_URL === "https://tbbnuusdslerhircsulg.supabase.co" ||
+            SUPABASE_ANON_KEY === "sb_publishable_KkuV1RbgnKPy45NSOwCLtA_r7LK2hTk") {
+          status.textContent = "Contact form is not connected yet. Please add the Supabase project URL and anon/publishable key.";
+          return;
+        }
+
+        const data = {
+          name: document.getElementById("name").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          phone: document.getElementById("phone").value.trim(),
+          property: document.getElementById("property").value.trim(),
+          work: document.querySelector('input[name="work"]:checked')?.value || "",
+          hear: document.querySelector('input[name="hear"]:checked')?.value || "",
+          message: document.getElementById("message").value.trim()
+        };
+
+        button.disabled = true;
+        button.textContent = "SENDING...";
+        status.textContent = "Sending your enquiry...";
+
+        try {
+          const response = await fetch(SUPABASE_URL + "/rest/v1/contact_submissions", {
+            method: "POST",
+            headers: {
+              "apikey": SUPABASE_ANON_KEY,
+              "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+              "Content-Type": "application/json",
+              "Prefer": "return=minimal"
+            },
+            body: JSON.stringify(data)
+          });
+
+          if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(errorText || "Unable to submit enquiry.");
+          }
+
+          form.reset();
+          status.textContent = "Thank you! Your enquiry has been sent successfully. We will contact you soon.";
+        } catch (error) {
+          console.error("Supabase contact form error:", error);
+          status.textContent = "Sorry, your enquiry could not be sent. Please try again or call us on 07391 931969.";
+        } finally {
+          button.disabled = false;
+          button.textContent = "SEND MESSAGE";
+        }
+      });
+    });
+  </script>
 
   <div class="mobile-bar">
     <a href="contact.html">CONTACT</a>
