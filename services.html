@@ -3,91 +3,1337 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="google-site-verification" content="FkKxa-WfFEfj4fIj48RuPiehr8dB7jEPzyYCjltnP70">
+<meta name="theme-color" content="#175f4b">
+
 <title>Building Services Sheffield | Perfect Building Contractor LTD</title>
-<meta name="description" content="Explore building services from Perfect Building Contractor LTD, including house extensions, loft conversions, renovations, roofing, new builds and more in Sheffield.">
+
+<meta name="description" content="Explore professional building services from Perfect Building Contractor LTD in Sheffield, including house extensions, loft conversions, renovations, roofing, new builds, property refurbishment and commercial building work.">
+
 <meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Perfect Building Contractor LTD">
+
 <link rel="canonical" href="https://www.perfectbuilders.uk/services.html">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <script defer src="script.js"></script>
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Perfect Building Contractor LTD">
 <meta property="og:title" content="Building Services Sheffield | Perfect Building Contractor LTD">
-<meta property="og:description" content="Explore building services from Perfect Building Contractor LTD, including house extensions, loft conversions, renovations, roofing, new builds and more in Sheffield.">
+<meta property="og:description" content="Professional residential and commercial building services in Sheffield, including extensions, conversions, renovations, roofing and property improvements.">
 <meta property="og:url" content="https://www.perfectbuilders.uk/services.html">
 <meta property="og:image" content="https://www.perfectbuilders.uk/assets/premier.webp">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Building Services Sheffield | Perfect Building Contractor LTD">
+<meta name="twitter:description" content="Professional building, construction, renovation and property improvement services in Sheffield.">
+<meta name="twitter:image" content="https://www.perfectbuilders.uk/assets/premier.webp">
+
+<!-- Business Schema -->
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"GeneralContractor",
- "name":"Perfect Building Contractor LTD",
- "url":"https://www.perfectbuilders.uk/",
- "telephone":"+44 739 193 1969",
- "email":"info@perfectbuilders.uk",
- "address":{"@type":"PostalAddress","streetAddress":"2 Lopham Street","addressLocality":"Sheffield","postalCode":"S3 9JS","addressCountry":"GB"},
- "areaServed":{"@type":"Place","name":"Sheffield and surrounding areas"}
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Perfect Building Contractor LTD",
+  "url": "https://www.perfectbuilders.uk/",
+  "logo": "https://www.perfectbuilders.uk/assets/logo.jpg",
+  "image": "https://www.perfectbuilders.uk/assets/premier.webp",
+  "description": "Professional building and construction services in Sheffield, including extensions, conversions, renovations, roofing and property refurbishment.",
+  "telephone": "+447391931969",
+  "email": "info@perfectbuilders.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 Lopham Street",
+    "addressLocality": "Sheffield",
+    "postalCode": "S3 9JS",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    "Sheffield",
+    "South Yorkshire",
+    "West Yorkshire",
+    "Rotherham",
+    "Doncaster",
+    "Leeds",
+    "Bradford",
+    "Halifax"
+  ],
+  "vatID": "525858656"
 }
 </script>
-<style>html,body{max-width:100%;overflow-x:hidden}img{max-width:100%;height:auto}</style>
+
+<style>
+
+:root{
+  --green:#175f4b;
+  --dark-green:#123f33;
+  --light-green:#eaf4f0;
+  --gold:#d7a400;
+  --dark:#1d1d1d;
+  --grey:#666;
+  --light:#f7f7f7;
+  --white:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',Arial,sans-serif;
+  color:#222;
+  background:#fff;
+  line-height:1.75;
+  padding-top:166px;
+  padding-bottom:0;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+a{
+  text-decoration:none;
+}
+
+/* TOP PROMO */
+
+.promo{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:5000;
+  background:var(--green);
+  color:#fff;
+  text-align:center;
+  padding:7px 15px;
+  font-size:12px;
+  font-weight:500;
+}
+
+/* HEADER */
+
+header{
+  position:fixed;
+  top:35px;
+  left:0;
+  right:0;
+  z-index:4999;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+.brand-row{
+  height:87px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6%;
+}
+
+.logo-wrap img{
+  width:78px;
+  height:auto;
+  display:block;
+}
+
+.company-name{
+  color:var(--green);
+  font-size:22px;
+  font-weight:700;
+  text-align:center;
+}
+
+.socials{
+  color:var(--green);
+  font-size:17px;
+  white-space:nowrap;
+}
+
+.socials span{
+  margin-left:10px;
+}
+
+.nav-row{
+  height:44px;
+  border-top:1px solid #eee;
+  display:flex;
+  align-items:center;
+  padding:0 6%;
+}
+
+.nav-row nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  flex:1;
+}
+
+.nav-row nav a{
+  color:#222;
+  font-size:13px;
+  font-weight:600;
+  transition:.2s ease;
+}
+
+.nav-row nav a:hover,
+.nav-row nav a.active{
+  color:var(--green);
+}
+
+.phone-box{
+  color:var(--green);
+  font-size:13px;
+  font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+  min-height:390px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(23,95,75,.78),rgba(23,95,75,.78)),
+    url('assets/premier.webp') center/cover no-repeat;
+}
+
+.hero-overlay{
+  width:min(950px,92%);
+  padding:70px 20px;
+}
+
+.tag,
+.section-label{
+  color:#dcefe8;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:12px 0 14px;
+  color:#fff;
+  font-size:52px;
+  line-height:1.2;
+}
+
+.hero p{
+  color:#fff;
+  max-width:750px;
+  margin:0 auto;
+  font-size:17px;
+}
+
+.buttons{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* BUTTONS */
+
+.btn{
+  display:inline-block;
+  padding:13px 27px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.3px;
+  border-radius:2px;
+  transition:.2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.btn.green{
+  background:var(--green);
+  color:#fff;
+}
+
+.hero .btn.green{
+  background:#fff;
+  color:var(--green);
+}
+
+.btn.white{
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,.8);
+}
+
+/* GENERAL */
+
+.section{
+  width:min(1160px,92%);
+  margin:0 auto;
+  padding:70px 0;
+}
+
+.section-label{
+  color:var(--green);
+  margin-bottom:8px;
+}
+
+h2{
+  margin:0 0 18px;
+  color:var(--green);
+  font-size:34px;
+  line-height:1.3;
+}
+
+h3{
+  line-height:1.4;
+}
+
+p{
+  margin:0 0 17px;
+}
+
+/* INTRO */
+
+.intro-text{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* SERVICE GRID */
+
+.service-section{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+  margin-top:35px;
+}
+
+.service-card{
+  min-height:240px;
+  position:relative;
+  overflow:hidden;
+  border-radius:3px;
+  background-position:center;
+  background-size:cover;
+  transition:.25s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-4px);
+}
+
+.service-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.78),
+    rgba(0,0,0,.05)
+  );
+}
+
+.service-card a{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding:18px;
+  z-index:1;
+}
+
+.service-card a div{
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.4;
+}
+
+/* PROJECT DISCUSSION */
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.intro-img img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  display:block;
+  border-radius:3px;
+}
+
+/* WHY CHOOSE */
+
+.choose-wrap{
+  background:var(--light-green);
+}
+
+.choose-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px 45px;
+  margin-top:25px;
+}
+
+.choose-item{
+  position:relative;
+  padding-left:30px;
+  font-size:15px;
+}
+
+.choose-item::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--green);
+  font-weight:700;
+}
+
+/* VAT SECTION */
+
+.vat-section{
+  background:#f7f7f7;
+}
+
+.vat-box{
+  max-width:950px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid #e1e8e4;
+  border-left:5px solid var(--green);
+  padding:35px;
+}
+
+.vat-box h2{
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.vat-box p:last-child{
+  margin-bottom:0;
+}
+
+/* CTA */
+
+.cta{
+  background:var(--green);
+  color:#fff;
+  text-align:center;
+  padding:70px 20px;
+}
+
+.cta h2{
+  color:#fff;
+  margin-bottom:15px;
+}
+
+.cta p{
+  max-width:700px;
+  margin:0 auto 20px;
+}
+
+.cta .btn.white{
+  background:#fff;
+  color:var(--green);
+  border:none;
+}
+
+/* FOOTER */
+
+footer{
+  background:var(--dark-green);
+  color:#fff;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:35px;
+  padding:55px 6% 35px;
+  font-size:12px;
+  line-height:1.8;
+}
+
+footer h3{
+  color:#fff;
+  font-size:17px;
+  margin-top:0;
+}
+
+footer p{
+  color:rgba(255,255,255,.88);
+}
+
+footer a{
+  color:rgba(255,255,255,.9);
+}
+
+footer a:hover{
+  color:#fff;
+  text-decoration:underline;
+}
+
+.copyright{
+  grid-column:1/-1;
+  border-top:1px solid rgba(255,255,255,.2);
+  padding-top:20px;
+  text-align:center;
+  font-size:11px;
+  color:rgba(255,255,255,.75);
+}
+
+/* MOBILE BAR */
+
+.mobile-bar{
+  display:none;
+}
+
+.top-btn{
+  position:fixed;
+  right:12px;
+  bottom:20px;
+  background:var(--green);
+  color:#fff;
+  border:0;
+  width:34px;
+  height:34px;
+  z-index:1001;
+  cursor:pointer;
+}
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+  .service-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  footer{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  body{
+    padding-top:166px;
+    padding-bottom:55px;
+  }
+
+  .promo{
+    font-size:10px;
+  }
+
+  .brand-row{
+    padding:0 4%;
+  }
+
+  .logo-wrap img{
+    width:58px;
+  }
+
+  .company-name{
+    font-size:12px;
+  }
+
+  .socials{
+    font-size:11px;
+  }
+
+  .socials span{
+    margin-left:5px;
+  }
+
+  .nav-row{
+    padding:0 15px;
+    overflow-x:auto;
+  }
+
+  .nav-row nav{
+    justify-content:flex-start;
+    gap:17px;
+    white-space:nowrap;
+  }
+
+  .phone-box{
+    display:none;
+  }
+
+  .hero{
+    min-height:300px;
+  }
+
+  .hero-overlay{
+    padding:50px 10px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:13px;
+  }
+
+  .section{
+    padding:48px 0;
+  }
+
+  h2{
+    font-size:28px;
+  }
+
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+
+  .service-card{
+    min-height:190px;
+  }
+
+  .service-card a div{
+    font-size:13px;
+  }
+
+  .split{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .intro-img img{
+    height:280px;
+  }
+
+  .choose-grid{
+    grid-template-columns:1fr;
+  }
+
+  .vat-box{
+    padding:25px 20px;
+  }
+
+  footer{
+    grid-template-columns:1fr;
+    padding:45px 7% 30px;
+  }
+
+  .mobile-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:2000;
+    display:flex;
+    background:var(--green);
+    padding:8px 14px;
+    gap:14px;
+  }
+
+  .mobile-bar a{
+    flex:1;
+    background:#fff;
+    color:var(--green);
+    text-align:center;
+    padding:9px;
+    font-size:12px;
+    font-weight:700;
+  }
+
+  .top-btn{
+    bottom:65px;
+  }
+}
+
+</style>
 </head>
+
 <body>
-<div class="promo">Get 5% off this month when you try our services! | Fully Insured Services | 5 Years Work Guarantee</div>
+
+<!-- PROMO BAR -->
+
+<div class="promo">
+  Get 5% off this month when you try our services! |
+  Fully Insured Services |
+  5 Years Work Guarantee
+</div>
+
+<!-- HEADER -->
+
 <header>
-<div class="brand-row">
-<div class="logo-wrap"><a href="index.html"><img src="assets/logo.jpg" alt="Perfect Building Contractor LTD logo"></a></div>
-<div class="company-name">Perfect Building Contractor LTD</div>
-<div class="socials"><span>f</span><span>♥</span><span>in</span><span>G</span><span>✉</span></div>
-</div>
-<div class="nav-row">
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact Us</a><a href="blog.html">Blog</a>
-</nav>
-<a class="phone-box" href="tel:+447391931969">☎ 07391 931969</a>
-</div>
+
+  <div class="brand-row">
+
+    <div class="logo-wrap">
+      <a href="index.html" aria-label="Perfect Building Contractor LTD Home">
+        <img
+          src="assets/logo.jpg"
+          alt="Perfect Building Contractor LTD logo">
+      </a>
+    </div>
+
+    <div class="company-name">
+      Perfect Building Contractor LTD
+    </div>
+
+    <div class="socials" aria-label="Social media">
+      <span>f</span>
+      <span>♥</span>
+      <span>in</span>
+      <span>G</span>
+      <span>✉</span>
+    </div>
+
+  </div>
+
+  <div class="nav-row">
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="projects.html">Projects</a>
+
+      <a class="active" href="services.html">Services</a>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact Us</a>
+
+      <a href="blog.html">Blog</a>
+
+    </nav>
+
+    <a
+      class="phone-box"
+      href="tel:+447391931969">
+      ☎ 07391 931969
+    </a>
+
+  </div>
+
 </header>
+
 <main>
-<section class="hero hero-slot">
-<div class="hero-overlay">
-<div class="tag">PERFECT BUILDING CONTRACTOR LTD</div>
-<h1>Building Services in Sheffield</h1>
-<p>Professional residential and commercial building services across Sheffield and surrounding areas.</p>
-<div class="buttons"><a class="btn green" href="contact.html">GET FREE QUOTE</a><a class="btn white" href="tel:+447391931969">CALL US</a></div>
-</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-overlay">
+
+    <div class="tag">
+      PERFECT BUILDING CONTRACTOR LTD
+    </div>
+
+    <h1>Building Services in Sheffield</h1>
+
+    <p>
+      Professional residential and commercial building services across
+      Sheffield and surrounding areas.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn green"
+        href="contact.html">
+        GET FREE QUOTE
+      </a>
+
+      <a
+        class="btn white"
+        href="tel:+447391931969">
+        CALL US
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
+
+<!-- INTRODUCTION -->
+
 <section class="section">
-<div class="section-title"><h2>Building Services in Sheffield</h2></div>
-<div class="intro-copy">
-<div class="service-grid"><div class="service-card image-photo" style="background-image:url('assets/loft.webp')"><a href="loft-conversions-sheffield.html"><div>Loft Conversions Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/garage.webp')"><a href="garage-conversions-sheffield.html"><div>Garage Conversions Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/extension.webp')"><a href="house-extensions-sheffield.html"><div>House Extensions Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/newbuild.webp')"><a href="new-builds-sheffield.html"><div>New Builds Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/kitchen.webp')"><a href="kitchen-fitting-sheffield.html"><div>Kitchen Fitting Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/windows.webp')"><a href="windows-doors-sheffield.html"><div>Windows & Doors Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/laminate.webp')"><a href="flooring-sheffield.html"><div>Flooring Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/joinery.webp')"><a href="joinery-carpentry-sheffield.html"><div>Joinery & Carpentry Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/newbuild.webp')"><a href="roofing-sheffield.html"><div>Roofing Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/extension.webp')"><a href="building-alterations-sheffield.html"><div>Building Alterations Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/kitchen.webp')"><a href="bathroom-installation-sheffield.html"><div>Bathroom Installation Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/5-3.webp')"><a href="tiling-sheffield.html"><div>Tiling Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/newbuild.webp')"><a href="commercial-builders-sheffield.html"><div>Commercial Builders Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/premier.webp')"><a href="residential-builders-sheffield.html"><div>Residential Builders Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/professional.webp')"><a href="home-renovation-sheffield.html"><div>Home Renovation Sheffield</div></a></div><div class="service-card image-photo" style="background-image:url('assets/joinery.webp')"><a href="refurbishment-sheffield.html"><div>Property Refurbishment Sheffield</div></a></div></div><p>Contact us for a free consultation and quotation for your project.</p>
-</div>
+
+  <div class="intro-text">
+
+    <div class="section-label">
+      Our Building Services
+    </div>
+
+    <h2>
+      Professional Building & Construction Services
+    </h2>
+
+    <p>
+      Perfect Building Contractor LTD provides professional building,
+      construction, renovation and property improvement services for
+      residential and commercial properties in Sheffield and surrounding
+      areas.
+    </p>
+
+    <p>
+      Whether you are planning a house extension, loft conversion,
+      property renovation, refurbishment or new building project,
+      our team can discuss your requirements and provide a clear
+      quotation for the proposed work.
+    </p>
+
+  </div>
+
 </section>
-<section class="intro split section">
-<div class="intro-img image-photo"><img src="assets/premier.webp" alt="Building Services in Sheffield" loading="lazy"></div>
-<div class="intro-copy">
-<h2>Discuss Your Project</h2>
-<p>Every property and project is different. Contact Perfect Building Contractor LTD to explain your requirements, discuss the scope of work and request a quotation.</p>
-<a class="btn green" href="contact.html">GET FREE QUOTE</a>
-</div>
+
+<!-- SERVICE GRID -->
+
+<section class="service-section">
+
+  <div class="section">
+
+    <div class="section-label">
+      Explore Our Services
+    </div>
+
+    <h2>
+      Building Services Available in Sheffield
+    </h2>
+
+    <div class="service-grid">
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/loft.webp')">
+
+        <a href="loft-conversions-sheffield.html">
+          <div>Loft Conversions Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/garage.webp')">
+
+        <a href="garage-conversions-sheffield.html">
+          <div>Garage Conversions Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/extension.webp')">
+
+        <a href="house-extensions-sheffield.html">
+          <div>House Extensions Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/newbuild.webp')">
+
+        <a href="new-builds-sheffield.html">
+          <div>New Builds Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/kitchen.webp')">
+
+        <a href="kitchen-fitting-sheffield.html">
+          <div>Kitchen Fitting Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/windows.webp')">
+
+        <a href="windows-doors-sheffield.html">
+          <div>Windows & Doors Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/laminate.webp')">
+
+        <a href="flooring-sheffield.html">
+          <div>Flooring Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/joinery.webp')">
+
+        <a href="joinery-carpentry-sheffield.html">
+          <div>Joinery & Carpentry Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/newbuild.webp')">
+
+        <a href="roofing-sheffield.html">
+          <div>Roofing Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/extension.webp')">
+
+        <a href="building-alterations-sheffield.html">
+          <div>Building Alterations Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/kitchen.webp')">
+
+        <a href="bathroom-installation-sheffield.html">
+          <div>Bathroom Installation Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/5-3.webp')">
+
+        <a href="tiling-sheffield.html">
+          <div>Tiling Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/newbuild.webp')">
+
+        <a href="commercial-builders-sheffield.html">
+          <div>Commercial Builders Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/premier.webp')">
+
+        <a href="residential-builders-sheffield.html">
+          <div>Residential Builders Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/professional.webp')">
+
+        <a href="home-renovation-sheffield.html">
+          <div>Home Renovation Sheffield</div>
+        </a>
+
+      </div>
+
+      <div
+        class="service-card"
+        style="background-image:url('assets/joinery.webp')">
+
+        <a href="refurbishment-sheffield.html">
+          <div>Property Refurbishment Sheffield</div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-<section class="choose section">
-<h2>Why Choose Us?</h2>
-<ul><li>30+ years of experience</li><li>300+ completed projects stated by the business</li><li>Fully insured services with contract cover</li><li>Free consultation and quotation</li><li>Residential and commercial building work</li><li>Work undertaken in accordance with applicable standards and regulations</li></ul>
+
+<!-- DISCUSS PROJECT -->
+
+<section class="section split">
+
+  <div class="intro-img">
+
+    <img
+      src="assets/premier.webp"
+      alt="Professional building and construction services in Sheffield"
+      loading="lazy">
+
+  </div>
+
+  <div>
+
+    <div class="section-label">
+      Discuss Your Project
+    </div>
+
+    <h2>
+      Tell Us About Your Building Project
+    </h2>
+
+    <p>
+      Every property and construction project is different. We encourage
+      clients to contact us to discuss their requirements, the proposed
+      scope of work and the type of building service they require.
+    </p>
+
+    <p>
+      Our team can discuss your project and provide information about
+      the next steps before preparing a quotation where appropriate.
+    </p>
+
+    <a
+      class="btn green"
+      href="contact.html">
+      GET FREE QUOTE
+    </a>
+
+  </div>
+
 </section>
+
+<!-- WHY CHOOSE -->
+
+<section class="choose-wrap">
+
+  <div class="section">
+
+    <div class="section-label">
+      Why Choose Us
+    </div>
+
+    <h2>
+      Why Choose Perfect Building Contractor LTD?
+    </h2>
+
+    <p>
+      We combine practical building experience with a professional,
+      customer-focused approach.
+    </p>
+
+    <div class="choose-grid">
+
+      <div class="choose-item">
+        30+ years of experience
+      </div>
+
+      <div class="choose-item">
+        300+ completed projects
+      </div>
+
+      <div class="choose-item">
+        Fully insured services with contract cover
+      </div>
+
+      <div class="choose-item">
+        Free consultation and quotation
+      </div>
+
+      <div class="choose-item">
+        Residential and commercial building work
+      </div>
+
+      <div class="choose-item">
+        Work undertaken in accordance with applicable standards and regulations
+      </div>
+
+      <div class="choose-item">
+        Clear and professional quotations
+      </div>
+
+      <div class="choose-item">
+        VAT Registered Business
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VAT INFORMATION -->
+
+<section class="vat-section">
+
+  <div class="section">
+
+    <div class="vat-box">
+
+      <div class="section-label">
+        VAT & Pricing Information
+      </div>
+
+      <h2>
+        VAT Registered Building Contractor
+      </h2>
+
+      <p>
+        Perfect Building Contractor LTD operates as a VAT-registered
+        building and construction business. We aim to provide clear
+        and professional quotations and invoices for our services.
+      </p>
+
+      <p>
+        <strong>All prices and quotations are exclusive of VAT unless otherwise stated.
+        VAT will be charged at the applicable rate where required.</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
 <section class="cta">
-<h2>Let's Build Something Perfect Together</h2>
-<p>Speak with our team about your building project in Sheffield and surrounding areas.</p>
-<a class="btn white" href="contact.html">CONTACT US</a>
+
+  <h2>
+    Let's Build Something Perfect Together
+  </h2>
+
+  <p>
+    Speak with our team about your building, construction,
+    renovation or property improvement project in Sheffield
+    and surrounding areas.
+  </p>
+
+  <a
+    class="btn white"
+    href="contact.html">
+    CONTACT US
+  </a>
+
 </section>
+
 </main>
+
+<!-- FOOTER -->
+
 <footer>
-<div><h3>Perfect Building Contractor LTD</h3><p>Building services in Sheffield and surrounding areas, including extensions, conversions, renovations, roofing and new builds.</p></div>
-<div><h3>Services</h3><p><a href="services.html">All Services</a><br><a href="house-extensions-sheffield.html">House Extensions</a><br><a href="loft-conversions-sheffield.html">Loft Conversions</a><br><a href="home-renovation-sheffield.html">Home Renovation</a></p></div>
-<div><h3>Office in UK</h3><p>📍 2 Lopham Street,<br>Sheffield, S3 9JS</p><p>☎ <a href="tel:+447391931969">(+44) 739-193-1969</a><br>✉ <a href="mailto:info@perfectbuilders.uk">info@perfectbuilders.uk</a></p></div>
-<div><h3>Contact</h3><p><a href="contact.html">Request a free quotation</a><br><a href="projects.html">View our projects</a><br><a href="blog.html">Read our building guides</a></p></div>
-<div class="copyright">Copyright © 2026 Perfect Building Contractor LTD</div>
+
+  <div>
+
+    <h3>
+      Perfect Building Contractor LTD
+    </h3>
+
+    <p>
+      Professional building and construction services in Sheffield
+      and surrounding areas, including extensions, conversions,
+      renovations, roofing, refurbishment and new builds.
+    </p>
+
+    <p>
+      <strong>VAT Registered Business</strong>
+    </p>
+
+    <p>
+      <a href="https://www.perfectbuilders.uk/">
+        perfectbuilders.uk
+      </a>
+    </p>
+
+  </div>
+
+  <div>
+
+    <h3>
+      Services
+    </h3>
+
+    <p>
+
+      <a href="services.html">
+        All Services
+      </a>
+
+      <br>
+
+      <a href="house-extensions-sheffield.html">
+        House Extensions
+      </a>
+
+      <br>
+
+      <a href="loft-conversions-sheffield.html">
+        Loft Conversions
+      </a>
+
+      <br>
+
+      <a href="home-renovation-sheffield.html">
+        Home Renovation
+      </a>
+
+      <br>
+
+      <a href="roofing-sheffield.html">
+        Roofing
+      </a>
+
+    </p>
+
+  </div>
+
+  <div>
+
+    <h3>
+      Office in UK
+    </h3>
+
+    <p>
+      📍 2 Lopham Street,<br>
+      Sheffield, S3 9JS
+    </p>
+
+    <p>
+      <strong>VAT Registration No:</strong><br>
+      525 8586 56
+    </p>
+
+    <p>
+
+      ☎
+      <a href="tel:+447391931969">
+        (+44) 739-193-1969
+      </a>
+
+      <br>
+
+      ✉
+      <a href="mailto:info@perfectbuilders.uk">
+        info@perfectbuilders.uk
+      </a>
+
+    </p>
+
+  </div>
+
+  <div>
+
+    <h3>
+      Contact
+    </h3>
+
+    <p>
+
+      <a href="contact.html">
+        Request a free quotation
+      </a>
+
+      <br>
+
+      <a href="projects.html">
+        View our projects
+      </a>
+
+      <br>
+
+      <a href="about.html">
+        About our company
+      </a>
+
+      <br>
+
+      <a href="blog.html">
+        Read our building guides
+      </a>
+
+    </p>
+
+  </div>
+
+  <div class="copyright">
+
+    Copyright © 2026 Perfect Building Contractor LTD |
+    VAT Registered Business |
+    VAT Registration No: 525 8586 56
+
+  </div>
+
 </footer>
-<div class="mobile-bar"><a href="contact.html">CONTACT</a><a href="tel:+447391931969">CALL</a></div>
-<button class="top-btn" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">⌃</button>
+
+<!-- MOBILE CONTACT BAR -->
+
+<div class="mobile-bar">
+
+  <a href="contact.html">
+    CONTACT
+  </a>
+
+  <a href="tel:+447391931969">
+    CALL
+  </a>
+
+</div>
+
+<!-- BACK TO TOP -->
+
+<button
+  class="top-btn"
+  aria-label="Back to top"
+  onclick="window.scrollTo({top:0,behavior:'smooth'})">
+
+  ⌃
+
+</button>
+
 </body>
 </html>
