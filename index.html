@@ -482,6 +482,35 @@
     <a href="tel:+447391931969">CALL</a>
   </div>
   <button class="top-btn" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">⌃</button>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const menuButton = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (menuButton && mainNav) {
+
+        menuButton.addEventListener("click", function () {
+
+            mainNav.classList.toggle("active");
+
+            const isOpen = mainNav.classList.contains("active");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+
+            if (isOpen) {
+                menuButton.innerHTML = "✕";
+                menuButton.setAttribute("aria-label", "Close menu");
+            } else {
+                menuButton.innerHTML = "☰";
+                menuButton.setAttribute("aria-label", "Open menu");
+            }
+
+        });
+
+    }
+
+});
+</script>
 </body>
 </html>
