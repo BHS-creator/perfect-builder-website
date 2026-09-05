@@ -24,7 +24,7 @@
 .areas-toggle{border:0}
 @media(max-width:700px){
  .review-track{gap:10px}.review-track .review{flex:0 0 calc((100% - 20px)/3)}
- .service-grid{grid-template-columns:1fr 1fr}
+ .service-grid{grid-template-columns:1fr 1fr}  
 }
 
 /* Final responsive safety */
@@ -660,5 +660,260 @@ footer span {
     .area-pills a {
         font-size: 12px;
     }
+
+}
+/* =========================================================
+   FINAL MOBILE VISUAL POLISH
+   VISUAL ONLY — NO SEO / HTML / LINKS CHANGED
+   ========================================================= */
+
+/* ---------- GENERAL MOBILE TYPOGRAPHY ---------- */
+@media (max-width: 700px) {
+
+  body {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- AREAS WE SERVE ---------- */
+
+  .areas,
+  section.areas.section {
+    padding: 52px 22px 58px !important;
+    background: #edf2f5 !important;
+  }
+
+  .areas .section-title {
+    margin-bottom: 26px !important;
+    text-align: center !important;
+  }
+
+  .areas .section-title h2,
+  .areas h2.label {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 16px !important;
+  }
+
+  .areas .section-title p {
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    font-weight: 400 !important;
+    color: #61706c !important;
+  }
+
+  /* Force a clean professional grid */
+  .areas .area-pills {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 28px auto 0 !important;
+  }
+
+  /* Remove ALL default browser link styling */
+  .areas .area-pills a,
+  .areas .area-pills a:link,
+  .areas .area-pills a:visited,
+  .areas .area-pills a:hover,
+  .areas .area-pills a:active,
+  .areas .area-pills a:focus {
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 58px !important;
+
+    margin: 0 !important;
+    padding: 12px 10px !important;
+
+    background: #ffffff !important;
+    color: #15533f !important;
+
+    border: 1px solid rgba(8, 98, 71, 0.16) !important;
+    border-radius: 8px !important;
+
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+
+    font-family: inherit !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+
+    line-height: 1.35 !important;
+    letter-spacing: 0.15px !important;
+
+    text-align: center !important;
+
+    box-shadow: 0 2px 8px rgba(8, 98, 71, 0.07) !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+
+    transform: none !important;
+    text-shadow: none !important;
+
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Remove odd visited / blue mobile browser colour */
+  .areas .area-pills a:visited {
+    color: #15533f !important;
+  }
+
+  /* Keep touch effect subtle */
+  .areas .area-pills a:active {
+    background: #f4f8f6 !important;
+    transform: scale(0.98) !important;
+  }
+
+
+  /* ---------- CALL STRIP ---------- */
+
+  .call-strip {
+    padding: 54px 24px 58px !important;
+    min-height: auto !important;
+  }
+
+  .call-strip p {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+  }
+
+  .call-strip h3 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin: 26px 0 10px !important;
+  }
+
+  .call-strip p:last-child a,
+  .call-strip p:last-child a:link,
+  .call-strip p:last-child a:visited {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .cta {
+    padding: 54px 24px !important;
+  }
+
+  .cta h2 {
+    font-size: 26px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .cta p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* ---------- FAQ ---------- */
+
+  .faq {
+    padding: 52px 22px 58px !important;
+  }
+
+  .faq h2 {
+    font-size: 25px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .faq-item {
+    margin-bottom: 10px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+  }
+
+  .faq-item button {
+    min-height: 60px !important;
+    padding: 16px 18px !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .faq-item p {
+    padding: 16px 18px !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 34px 24px !important;
+    padding: 52px 22px 0 !important;
+    overflow: visible !important;
+  }
+
+  footer > div {
+    min-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  footer h3 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin: 0 0 15px !important;
+  }
+
+  footer p,
+  footer a {
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+  }
+
+  footer a,
+  footer a:link,
+  footer a:visited,
+  footer a:hover,
+  footer a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  footer .copyright {
+    grid-column: 1 / -1 !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    padding: 20px 0 !important;
+  }
+
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 420px) {
+
+  .areas .area-pills {
+    grid-template-columns: 1fr !important;
+  }
+
+  .areas .area-pills a {
+    min-height: 52px !important;
+    font-size: 12px !important;
+  }
 
 }
