@@ -2808,6 +2808,6 @@ body {
 /* HOME HERO TEXT POSITION - MOBILE ONLY */
 @media (max-width: 768px) {
     .hero-overlay {
-        transform: translateY(-35px) !important;
+        transform: translateY(-55px) !important;
     }
 }
