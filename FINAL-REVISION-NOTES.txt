@@ -1,0 +1,23 @@
+FINAL PROFESSIONAL REVISION — 5 September 2026
+
+Completed:
+- Single master responsive header and hamburger/X menu across all pages.
+- Fake social characters removed; email link retained as a real clickable contact action.
+- Header VAT pseudo-text disabled to prevent cramped mobile headers.
+- Footer typography and mobile layout improved.
+- Registered office wording and Companies House company number 13696843 added after verification.
+- Duplicate DOCTYPE declarations removed from all existing HTML pages.
+- Broken homepage image reference assets/137366.jpg replaced with existing assets/work1.webp.
+- Homepage Supabase contact form false “not connected” guard removed so the configured REST request can run.
+- Privacy notices added next to forms.
+- Privacy Policy, Cookie Policy, Website Terms & Conditions and Accessibility pages added.
+- Google Map changed to optional third-party content and controlled by a site-wide privacy choice.
+- Sitemap rebuilt to include About, Contact, Projects and the new legal pages; thank-you page excluded and marked noindex.
+- Local landing pages given unique, location-specific project-discussion sections and corrected location CTAs/schema.
+- Key overlong/short SEO titles and descriptions improved without removing page content.
+
+Important live checks still required:
+1. Submit a real test enquiry to the Supabase table and confirm RLS/API permissions.
+2. Submit the FormSubmit forms and confirm the email workflow.
+3. Verify the VAT number against HMRC records before relying on the VAT statement.
+4. Check all pages after deployment using the live domain and real mobile devices.
