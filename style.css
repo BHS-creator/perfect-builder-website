@@ -2805,3 +2805,9 @@ body {
         z-index: 9999 !important;
     }
 }
+/* HOME HERO TEXT POSITION - MOBILE ONLY */
+@media (max-width: 768px) {
+    .hero-overlay {
+        transform: translateY(-35px) !important;
+    }
+}
