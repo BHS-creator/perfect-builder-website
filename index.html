@@ -604,5 +604,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (menuButton && mainNav) {
+
+        menuButton.addEventListener("click", function () {
+
+            mainNav.classList.toggle("active");
+
+            if (mainNav.classList.contains("active")) {
+
+                menuButton.innerHTML = "×";
+                menuButton.setAttribute("aria-expanded", "true");
+
+            } else {
+
+                menuButton.innerHTML = "☰";
+                menuButton.setAttribute("aria-expanded", "false");
+
+            }
+
+        });
+
+    }
+
+});
+</script>
 </body>
 </html>
