@@ -917,3 +917,203 @@ footer span {
   }
 
 }
+/* =========================================================
+   FINAL PREMIUM HEADER IMPROVEMENT
+   Logo + Company Name + VAT Registration
+   VISUAL ONLY — NO SEO / LINKS / HTML STRUCTURE CHANGED
+   ========================================================= */
+
+
+/* ---------- DESKTOP / GENERAL HEADER ---------- */
+
+.brand-row {
+    min-height: 96px;
+}
+
+.logo-wrap {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+}
+
+.company-name {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-name::after {
+    content: "VAT Registered No: 525 8586 56";
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    color: #c8f5a9;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   MOBILE HEADER — PREMIUM VERSION
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Header brand section slightly taller
+       so larger logo and VAT fit comfortably */
+
+    .brand-row {
+        height: 96px !important;
+        min-height: 96px !important;
+
+        padding: 0 5% !important;
+
+        gap: 12px;
+    }
+
+
+    /* Bigger professional logo */
+
+    .logo-wrap {
+        width: 68px !important;
+        height: 68px !important;
+
+        flex: 0 0 68px !important;
+
+        border-radius: 50%;
+    }
+
+
+    .logo-wrap img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Company identity */
+
+    .company-name {
+        flex: 1;
+
+        min-width: 0;
+
+        font-size: 14px !important;
+
+        font-weight: 700 !important;
+
+        line-height: 1.3;
+
+        letter-spacing: 0.05px;
+
+        white-space: nowrap;
+    }
+
+
+    /* VAT registration below company name */
+
+    .company-name::after {
+
+        content: "VAT Registered No: 525 8586 56";
+
+        display: block;
+
+        margin-top: 4px;
+
+        font-size: 8.5px;
+
+        font-weight: 500;
+
+        line-height: 1.4;
+
+        letter-spacing: 0.15px;
+
+        color: #c8f5a9;
+
+        white-space: nowrap;
+    }
+
+
+    /* Keep social icons balanced
+       so company name has enough space */
+
+    .socials {
+
+        gap: 9px !important;
+
+        font-size: 14px !important;
+
+        flex-shrink: 0;
+    }
+
+
+    .socials span:nth-child(3) {
+        font-size: 12px !important;
+    }
+
+
+    /* Navigation remains below cleanly */
+
+    .nav-row {
+        height: 44px !important;
+    }
+
+
+    /* Header is fixed, so correct top spacing */
+
+    body {
+        padding-top: 175px !important;
+    }
+
+}
+
+
+/* Extra small mobile screens */
+
+@media (max-width: 420px) {
+
+    .brand-row {
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+
+        gap: 8px;
+    }
+
+
+    .logo-wrap {
+        width: 62px !important;
+        height: 62px !important;
+
+        flex-basis: 62px !important;
+    }
+
+
+    .company-name {
+        font-size: 12px !important;
+    }
+
+
+    .company-name::after {
+        font-size: 7.5px !important;
+    }
+
+
+    .socials {
+        gap: 7px !important;
+        font-size: 12px !important;
+    }
+
+}
