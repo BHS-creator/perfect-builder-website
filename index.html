@@ -102,49 +102,20 @@
 
   <script defer src="script.js"></script>
   <style>
-    html,body{max-width:100%;overflow-x:hidden}
-    img{max-width:100%;height:auto}
-    /* MOBILE MENU */
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MOBILE VERSION */
 @media (max-width: 768px) {
 
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        border: none;
-        color: #ffffff;
-        font-size: 42px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .main-nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        background: #155d4b;
-    }
-
-    .main-nav.active {
-        display: flex !important;
-    }
-
-    .main-nav a {
-        display: block;
-        width: 100%;
-        padding: 16px 25px;
-        color: #ffffff;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .phone-box {
-        display: none;
-    }
-}
-    @media (max-width: 768px) {
-
+    /* PROMO BAR */
     .promo {
         width: 100%;
         padding: 10px 15px;
@@ -167,19 +138,72 @@
     .promo-line-2 {
         font-size: 14px;
         font-weight: 600;
+        margin-top: 2px;
     }
 
+
+    /* HEADER */
     header {
-        padding: 0;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .brand-row {
-        padding: 18px 20px;
-        min-height: auto;
+        padding: 18px 20px !important;
+        min-height: auto !important;
+        height: auto !important;
     }
 
-    .nav-row {
+
+    /* MOBILE MENU BUTTON */
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 42px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+
+    /* NAVIGATION CLOSED */
+    .main-nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+        background: #155d4b;
+    }
+
+
+    /* NAVIGATION OPEN */
+    .main-nav.active {
+        display: flex !important;
+    }
+
+
+    /* MENU LINKS */
+    .main-nav a {
+        display: block;
+        width: 100%;
+        padding: 16px 25px;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+
+    /* HIDE PHONE BOX ON MOBILE */
+    .phone-box {
+        display: none;
+    }
+
+
+    /* HIDE EMPTY NAV ROW */
+    .nav-row {
+        display: none !important;
     }
 }
   </style>
