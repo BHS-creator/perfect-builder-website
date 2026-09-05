@@ -1390,3 +1390,82 @@ body{padding-top:201px !important;}
     }
 
 }
+/* =========================================
+   MOBILE HEADER & HAMBURGER MENU
+========================================= */
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.vat-number {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 34px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 8px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .company-name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .vat-number {
+        font-size: 13px;
+    }
+
+    /* Hide normal navigation initially */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #145c4b;
+        z-index: 1000;
+        padding: 15px 0;
+    }
+
+    /* Show menu when opened */
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: left;
+    }
+
+    /* Hide phone box on mobile */
+    .phone-box {
+        display: none;
+    }
+
+    /* Mobile navigation row */
+    .nav-row {
+        position: relative;
+    }
+}
