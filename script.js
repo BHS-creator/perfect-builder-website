@@ -74,3 +74,55 @@ document.querySelector(".areas-toggle")?.addEventListener("click", function(){
   list.classList.toggle("expanded");
   this.textContent=list.classList.contains("expanded") ? "SHOW LESS" : "VIEW ALL";
 });
+/* =========================================
+   MOBILE MENU TOGGLE
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (!menuButton || !mainNav) return;
+
+    menuButton.addEventListener("click", function () {
+
+        mainNav.classList.toggle("active");
+
+        const isOpen = mainNav.classList.contains("active");
+
+        menuButton.textContent = isOpen ? "✕" : "☰";
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close menu" : "Open menu"
+        );
+    });
+
+
+    /* Close menu after clicking a menu link */
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            mainNav.classList.remove("active");
+
+            menuButton.textContent = "☰";
+
+            menuButton.setAttribute("aria-expanded", "false");
+
+            menuButton.setAttribute(
+                "aria-label",
+                "Open menu"
+            );
+        });
+
+    });
+
+});
