@@ -104,6 +104,45 @@
   <style>
     html,body{max-width:100%;overflow-x:hidden}
     img{max-width:100%;height:auto}
+    /* MOBILE MENU */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 42px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: #155d4b;
+    }
+
+    .main-nav.active {
+        display: flex !important;
+    }
+
+    .main-nav a {
+        display: block;
+        width: 100%;
+        padding: 16px 25px;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .phone-box {
+        display: none;
+    }
+}
   </style>
 </head>
 
