@@ -1492,3 +1492,142 @@ body{padding-top:201px !important;}
         margin-top: 4px;
     }
 }
+/* =========================================
+   RESPONSIVE AUTO-SIZING - MOBILE FIRST
+========================================= */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Images automatically fit every screen */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container protection */
+section,
+header,
+main,
+footer,
+div {
+  max-width: 100%;
+}
+
+/* Responsive typography */
+h1 {
+  font-size: clamp(32px, 7vw, 72px);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(26px, 5vw, 48px);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+/* Hero content */
+.hero-content {
+  width: min(90%, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
+
+@media (max-width: 768px) {
+
+  .promo {
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .brand-row {
+    padding: 22px 35px;
+    min-height: 160px;
+  }
+
+  .company-name {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .vat-number {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 10vw, 56px);
+    line-height: 1.12;
+  }
+
+  .hero p {
+    font-size: clamp(18px, 5vw, 24px);
+    line-height: 1.5;
+  }
+
+  .tag {
+    font-size: 18px;
+    padding: 16px 25px;
+  }
+
+  /* Mobile menu */
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .brand-row {
+    padding: 20px 25px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .vat-number {
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 46px);
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .tag {
+    font-size: 17px;
+  }
+}
