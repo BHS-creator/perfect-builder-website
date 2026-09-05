@@ -1357,3 +1357,8 @@ body{padding-top:201px !important;}
     font-size:12px !important;
   }
 }
+@media (max-width: 768px) {
+    .hero-content {
+        transform: translateY(-45px);
+    }
+}
