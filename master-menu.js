@@ -1,35 +1,139 @@
-/* Perfect Building Contractor LTD — master responsive menu and privacy controls */
-(function(){
-  function closeMenu(header){
-    var button=header.querySelector('.menu-toggle'); var nav=header.querySelector('.nav-row');
-    if(!button||!nav)return; nav.classList.remove('active'); button.textContent='☰'; button.setAttribute('aria-expanded','false'); button.setAttribute('aria-label','Open menu');
+/* Perfect Building Contractor LTD — single master responsive menu */
+(function () {
+  'use strict';
+
+  function setMenuState(header, open) {
+    var button = header.querySelector('.menu-toggle');
+    var navRow = header.querySelector('.nav-row');
+    var mainNav = header.querySelector('.main-nav');
+
+    if (!button || !navRow || !mainNav) return;
+
+    header.classList.toggle('menu-open', open);
+    navRow.classList.toggle('active', open);
+    mainNav.classList.toggle('active', open);
+
+    button.textContent = open ? '✕' : '☰';
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   }
-  function openMenu(header){
-    var button=header.querySelector('.menu-toggle'); var nav=header.querySelector('.nav-row');
-    if(!button||!nav)return; nav.classList.add('active'); button.textContent='×'; button.setAttribute('aria-expanded','true'); button.setAttribute('aria-label','Close menu');
-  }
-  function initMenu(){
-    document.querySelectorAll('.site-header').forEach(function(header){
-      var button=header.querySelector('.menu-toggle'); var nav=header.querySelector('.nav-row'); if(!button||!nav)return;
-      button.textContent='☰'; button.addEventListener('click',function(e){e.preventDefault(); e.stopPropagation(); nav.classList.contains('active')?closeMenu(header):openMenu(header);});
-      nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){if(window.innerWidth<=768)closeMenu(header);});});
-      document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu(header);});
-      document.addEventListener('click',function(e){if(window.innerWidth<=768&&!header.contains(e.target))closeMenu(header);});
-      window.addEventListener('resize',function(){if(window.innerWidth>768)closeMenu(header);});
+
+  function initialiseMenus() {
+    var headers = document.querySelectorAll('.site-header');
+
+    headers.forEach(function (header) {
+      var button = header.querySelector('.menu-toggle');
+      var mainNav = header.querySelector('.main-nav');
+
+      if (!button || !mainNav) return;
+
+      setMenuState(header, false);
+
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        setMenuState(header, !header.classList.contains('menu-open'));
+      });
+
+      mainNav.querySelectorAll('a[href]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (window.matchMedia('(max-width: 768px)').matches) {
+            setMenuState(header, false);
+          }
+        });
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!window.matchMedia('(max-width: 768px)').matches) return;
+
+      headers.forEach(function (header) {
+        if (header.classList.contains('menu-open') && !header.contains(event.target)) {
+          setMenuState(header, false);
+        }
+      });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        headers.forEach(function (header) { setMenuState(header, false); });
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (!window.matchMedia('(max-width: 768px)').matches) {
+        headers.forEach(function (header) { setMenuState(header, false); });
+      }
     });
   }
-  function loadOptionalMaps(){document.querySelectorAll('.pb-consent-map[data-src]').forEach(function(frame){if(!frame.getAttribute('src'))frame.setAttribute('src',frame.getAttribute('data-src'));frame.classList.add('is-loaded');var msg=frame.previousElementSibling;if(msg&&msg.classList.contains('map-consent-message'))msg.hidden=true;});}
-  function showMapMessage(){document.querySelectorAll('.map-consent-message').forEach(function(msg){msg.hidden=false;});}
-  function setConsent(value){try{localStorage.setItem('pb_cookie_preference',value);}catch(e){} if(value==='accepted')loadOptionalMaps(); else showMapMessage();}
-  function initCookieBanner(){
-    var pref=null;try{pref=localStorage.getItem('pb_cookie_preference');}catch(e){}
-    if(pref==='accepted'){loadOptionalMaps();return;} if(pref==='essential'){showMapMessage();return;}
-    var banner=document.createElement('div'); banner.className='pb-cookie-banner'; banner.setAttribute('role','dialog'); banner.setAttribute('aria-label','Privacy choices');
-    banner.innerHTML='<p>We use essential browser storage for basic website functionality. Optional third-party content, such as maps, is loaded only if you allow it. <a href="cookie-policy.html">Cookie Policy</a></p><div class="pb-cookie-actions"><button type="button" class="pb-cookie-essential">Use essential only</button><button type="button" class="pb-cookie-accept">Allow third-party content</button></div>';
-    document.body.appendChild(banner);
-    banner.querySelector('.pb-cookie-essential').addEventListener('click',function(){setConsent('essential');banner.remove();});
-    banner.querySelector('.pb-cookie-accept').addEventListener('click',function(){setConsent('accepted');banner.remove();});
+
+  function loadOptionalMaps() {
+    document.querySelectorAll('.pb-consent-map[data-src]').forEach(function (frame) {
+      if (!frame.getAttribute('src')) frame.setAttribute('src', frame.getAttribute('data-src'));
+      frame.classList.add('is-loaded');
+      var message = frame.previousElementSibling;
+      if (message && message.classList.contains('map-consent-message')) message.hidden = true;
+    });
   }
-  function init(){initMenu();initCookieBanner();}
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+
+  function showMapMessage() {
+    document.querySelectorAll('.map-consent-message').forEach(function (message) {
+      message.hidden = false;
+    });
+  }
+
+  function setConsent(value) {
+    try { localStorage.setItem('pb_cookie_preference', value); } catch (error) {}
+    if (value === 'accepted') loadOptionalMaps();
+    else showMapMessage();
+  }
+
+  function initialiseCookieBanner() {
+    var preference = null;
+    try { preference = localStorage.getItem('pb_cookie_preference'); } catch (error) {}
+
+    if (preference === 'accepted') {
+      loadOptionalMaps();
+      return;
+    }
+
+    if (preference === 'essential') {
+      showMapMessage();
+      return;
+    }
+
+    var banner = document.createElement('div');
+    banner.className = 'pb-cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Privacy choices');
+    banner.innerHTML =
+      '<p>We use essential browser storage for basic website functionality. Optional third-party content, such as maps, is loaded only if you allow it. <a href="cookie-policy.html">Cookie Policy</a></p>' +
+      '<div class="pb-cookie-actions">' +
+      '<button type="button" class="pb-cookie-essential">Use essential only</button>' +
+      '<button type="button" class="pb-cookie-accept">Allow third-party content</button>' +
+      '</div>';
+
+    document.body.appendChild(banner);
+
+    banner.querySelector('.pb-cookie-essential').addEventListener('click', function () {
+      setConsent('essential');
+      banner.remove();
+    });
+
+    banner.querySelector('.pb-cookie-accept').addEventListener('click', function () {
+      setConsent('accepted');
+      banner.remove();
+    });
+  }
+
+  function initialise() {
+    initialiseMenus();
+    initialiseCookieBanner();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialise, { once: true });
+  } else {
+    initialise();
+  }
 })();

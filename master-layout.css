@@ -29,3 +29,99 @@ body .site-footer{display:grid!important;grid-template-columns:1.45fr 1.15fr 1.1
 @media(max-width:768px){body{padding-top:122px!important;padding-bottom:52px!important;}body .promo{height:35px!important;min-height:35px!important;padding:5px 12px!important;font-size:11px!important;}.site-header .brand-row{height:87px!important;min-height:87px!important;grid-template-columns:60px minmax(0,1fr) 46px!important;gap:12px!important;padding:0 6%!important;border-bottom:0!important;}.site-header .logo-wrap{width:55px!important;height:55px!important;}.site-header .company-details{justify-content:flex-start!important;}.site-header .company-name{text-align:left!important;font-size:14px!important;line-height:1.3!important;white-space:normal!important;}.site-header .socials{display:none!important;}.site-header .menu-toggle{display:flex!important;}.site-header .nav-row{display:none!important;height:auto!important;min-height:0!important;padding:0!important;border-bottom:0!important;background:var(--pb-green-dark)!important;}.site-header .nav-row.active{display:block!important;max-height:calc(100vh - 122px)!important;overflow-y:auto!important;box-shadow:0 10px 20px rgba(0,0,0,.18)!important;}.site-header .main-nav,.site-header .main-nav.active{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;width:100%!important;margin:0!important;padding:0!important;}.site-header .main-nav a{display:flex!important;width:100%!important;min-height:0!important;padding:16px 7%!important;color:#fff!important;font-size:16px!important;border-bottom:1px solid rgba(255,255,255,.14)!important;}.site-header .phone-box{display:flex!important;width:100%!important;min-width:0!important;min-height:0!important;margin:0!important;padding:15px 7%!important;background:#fff!important;font-size:15px!important;}body .site-footer{grid-template-columns:1fr 1fr!important;gap:30px 22px!important;padding:45px 6% 0!important;}.site-footer h3{font-size:15px!important;}.site-footer p{font-size:13px!important;line-height:1.75!important;}.site-footer .footer-legal{justify-content:flex-start!important;font-size:12px!important;}.site-footer .copyright{width:calc(100% + 12%)!important;margin:12px -6% 0!important;padding:14px 6%!important;font-size:11px!important;}.pb-cookie-banner{left:10px;right:10px;bottom:10px;padding:16px;}.pb-cookie-actions button{flex:1 1 180px;}.legal-hero{padding:50px 7%;}.legal-content{padding:40px 7%;}.legal-content h2{font-size:22px;}.legal-content p{font-size:15px;}.local-area-note p{font-size:14px!important;}}
 @media(max-width:600px){body .site-footer{grid-template-columns:1fr!important;gap:24px!important;}.site-footer .footer-legal{padding-top:4px!important;}.site-footer .copyright{text-align:left!important;}.pb-cookie-banner p{font-size:12px;}.pb-cookie-actions{flex-direction:column;}.pb-cookie-actions button{width:100%;}}
 @media(max-width:360px){.site-header .brand-row{grid-template-columns:52px minmax(0,1fr) 42px!important;gap:8px!important;padding:0 4%!important;}.site-header .logo-wrap{width:50px!important;height:50px!important;}.site-header .menu-toggle{width:42px!important;height:42px!important;font-size:29px!important;}.site-header .company-name{font-size:13px!important;}.site-header .main-nav a{font-size:15px!important;}}
+
+
+/* =========================================================
+   FINAL MOBILE MENU FUNCTIONALITY OVERRIDE
+   The JavaScript toggles .menu-open on the header and .active
+   on both the menu container and navigation, preventing page
+   specific legacy CSS from hiding the menu links.
+   ========================================================= */
+@media(max-width:768px){
+  .site-header.menu-open .nav-row,
+  .site-header .nav-row.active{
+    display:block!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+    overflow-y:auto!important;
+    max-height:calc(100vh - 122px)!important;
+  }
+
+  .site-header.menu-open .main-nav,
+  .site-header .main-nav.active{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  .site-header.menu-open .main-nav a,
+  .site-header .main-nav.active a{
+    display:flex!important;
+    width:100%!important;
+    min-height:54px!important;
+    padding:16px 7%!important;
+    color:#fff!important;
+    background:transparent!important;
+    visibility:visible!important;
+    opacity:1!important;
+    border-bottom:1px solid rgba(255,255,255,.14)!important;
+  }
+
+  .site-header.menu-open .phone-box,
+  .site-header .nav-row.active .phone-box{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:56px!important;
+    padding:15px 7%!important;
+    margin:0!important;
+    background:#fff!important;
+    color:#222!important;
+  }
+}
+
+
+/* VAT registration line — kept in the master header on every page */
+.site-header .company-details{
+  flex-direction:column!important;
+}
+.site-header .vat-number{
+  display:block!important;
+  margin:3px 0 0!important;
+  color:rgba(255,255,255,.82)!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  line-height:1.25!important;
+  letter-spacing:.1px!important;
+  white-space:nowrap!important;
+}
+@media(min-width:769px){
+  .site-header .company-details{
+    align-items:center!important;
+  }
+}
+@media(max-width:768px){
+  .site-header .company-details{
+    align-items:flex-start!important;
+  }
+  .site-header .vat-number{
+    font-size:10px!important;
+    margin-top:3px!important;
+  }
+  /* Keep the mobile navigation deterministic even when legacy page CSS differs. */
+  .site-header.menu-open .nav-row{
+    display:block!important;
+  }
+  .site-header:not(.menu-open) .nav-row{
+    display:none!important;
+  }
+}
