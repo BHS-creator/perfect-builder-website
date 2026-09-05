@@ -54,3 +54,11 @@ footer li,
 footer span {
   color: #ffffff;
 }
+.call-strip a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.call-strip a:hover {
+    color: #fff;
+}
