@@ -1374,3 +1374,19 @@ body{padding-top:201px !important;}
     }
 
 }
+/* REMOVE HEADER SOCIAL ICONS ON MOBILE ONLY */
+@media (max-width: 700px) {
+
+    header .brand-row .socials {
+        display: none !important;
+        visibility: hidden !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+    }
+
+}
