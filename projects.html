@@ -230,9 +230,14 @@ img{
 
     </div>
 
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="menu-icon">☰</span>
+      <span class="close-icon">×</span>
+    </button>
+
   </div>
 
-  <div class="nav-row">
+  <div class="nav-row" id="mobile-navigation">
 
     <nav aria-label="Main navigation">
 
@@ -982,6 +987,33 @@ img{
 
 </button>
 
+
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navRow = document.querySelector('.nav-row');
+
+  if (menuToggle && navRow) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navRow.classList.toggle('active');
+      menuToggle.classList.toggle('active', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    navRow.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 700) {
+          navRow.classList.remove('active');
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.setAttribute('aria-label', 'Open menu');
+        }
+      });
+    });
+  }
+</script>
 
 <!-- FAQ SCRIPT -->
 
