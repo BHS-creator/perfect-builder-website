@@ -126,3 +126,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* MOBILE MENU */
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navRow = document.querySelector('.nav-row');
+const menuIcon = document.querySelector('.menu-icon');
+
+if (menuToggle && navRow && menuIcon) {
+
+  menuToggle.addEventListener('click', () => {
+
+    navRow.classList.toggle('active');
+
+    const isOpen = navRow.classList.contains('active');
+
+    menuIcon.textContent = isOpen ? '×' : '☰';
+
+    menuToggle.setAttribute(
+      'aria-expanded',
+      isOpen ? 'true' : 'false'
+    );
+
+  });
+
+}
