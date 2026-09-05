@@ -1362,3 +1362,15 @@ body{padding-top:201px !important;}
         transform: translateY(-45px);
     }
 }
+/* MOBILE HEADER:
+   Keep Logo + Company Name + VAT
+   Remove ONLY social media icons
+*/
+
+@media (max-width: 700px) {
+
+    .socials {
+        display: none !important;
+    }
+
+}
