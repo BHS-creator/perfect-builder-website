@@ -1,9 +1,31 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Poppins,Arial,sans-serif;color:#155c49;background:#fff;font-size:14px}.promo{height:35px;background:#086247;color:#c8f5a9;text-align:center;padding:9px 8px;font-size:11px;border-bottom:1px solid rgba(255,255,255,.18)}header{background:#086247;color:#fff}.brand-row{height:87px;display:flex;align-items:center;justify-content:space-between;padding:0 5.5%;border-bottom:1px solid rgba(255,255,255,.12)}.logo-wrap{width:60px;height:60px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}.logo-wrap img{width:100%;height:100%;object-fit:cover}.company-name{font-weight:600;font-size:13px}.socials{display:flex;gap:20px;color:#c9f5a9;font-weight:700;font-size:18px;align-items:center}.socials span:nth-child(3){font-size:14px}.nav-row{height:44px;display:flex;align-items:center;justify-content:space-between;padding-left:3.5%;border-bottom:3px solid #fff}.nav-row nav{display:flex;gap:28px}.nav-row a{color:#fff;text-decoration:none;font-size:12px}.phone-box{background:#fff!important;color:#333!important;padding:10px 45px;margin-right:2%;min-width:145px;text-align:center}.service-hero{min-height:330px;background:linear-gradient(rgba(0,92,69,.78),rgba(0,92,69,.78)),url("assets/hero-banner-buildings.webp") center/cover;display:flex;align-items:center;padding:35px 3%;color:#fff}.hero-copy{max-width:900px}.hero-copy h1{font-size:34px;line-height:1.45;margin:0 0 15px}.hero-copy p{font-size:12px;line-height:1.8}.buttons{display:flex;gap:14px}.btn{display:inline-block;text-decoration:none;padding:11px 27px;font-size:11px;font-weight:500}.outline{border:1px solid #fff;color:#fff;background:transparent}.green{background:#086247;color:#fff}@keyframes serviceIntroZoomIn{
-  0%{opacity:0;transform:scale(.72)}
-  55%{opacity:1;transform:scale(1.04)}
-  100%{opacity:1;transform:scale(1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Poppins,Arial,sans-serif;color:#124f3d;background:#fff;font-size:14px}.promo{height:35px;background:#086247;color:#c8f5a9;text-align:center;padding:9px 8px;font-size:11px;border-bottom:1px solid rgba(255,255,255,.18)}header{background:#086247;color:#fff}.brand-row{height:87px;display:flex;align-items:center;justify-content:space-between;padding:0 5.5%;border-bottom:1px solid rgba(255,255,255,.12)}.logo-wrap{width:60px;height:60px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}.logo-wrap img{width:100%;height:100%;object-fit:cover}.company-name{font-weight:600;font-size:13px}.socials{display:flex;gap:20px;color:#c9f5a9;font-weight:700;font-size:18px;align-items:center}.socials span:nth-child(3){font-size:14px}.nav-row{height:44px;display:flex;align-items:center;justify-content:space-between;padding-left:3.5%;border-bottom:3px solid #fff}.nav-row nav{display:flex;gap:28px}.nav-row a{color:#fff;text-decoration:none;font-size:12px}.phone-box{background:#fff!important;color:#333!important;padding:10px 45px;margin-right:2%;min-width:145px;text-align:center}.image-slot{position:relative;overflow:hidden}.image-photo{position:relative;overflow:hidden;background-position:center;background-size:cover;background-repeat:no-repeat}.image-photo img{display:block;width:100%;height:100%;object-fit:cover}.hero{height:720px;background-image:linear-gradient(rgba(0,0,0,.43),rgba(0,0,0,.43)),url("assets/hero.jpg");background-position:center;background-size:cover;background-repeat:no-repeat}.hero-overlay{position:absolute;z-index:1;left:3%;top:68%;color:#fff;text-shadow:0 1px 2px #333}.tag,.label{display:inline-block;background:#086247;color:#fff;border-left:4px solid #baf48e;padding:7px 13px;font-size:14px;font-weight:500}.hero p{font-size:15px;line-height:1.9}.buttons{display:flex;gap:14px}.btn{display:inline-block;border:0;text-decoration:none;padding:11px 27px;font-size:11px;font-weight:500;cursor:pointer}.green{background:#086247;color:#fff}.white{background:#fff;color:#086247}.section{padding:58px 3%;}.section-title{text-align:center;margin-bottom:32px}.section-title h2{margin:0 0 7px;font-size:25px}.section-title p{margin:8px auto;color:#555}.section-title p:first-of-type{color:#b8f18f}.reviews{background:#fff}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.review{background:#f4f4f4;border-radius:10px;padding:17px;min-height:155px;position:relative;color:#222;font-size:11px}.review .avatar{display:inline-flex;width:29px;height:29px;border-radius:50%;background:#5c43a7;color:#fff;align-items:center;justify-content:center;margin-right:8px}.review .google{position:absolute;right:14px;color:#4285f4;font-size:20px;font-weight:bold}.stars{color:#f2bf00;margin:8px 0}.review p{line-height:1.4;margin:0}.split{background:#edf2f5}.intro-img,.professional-img{height:365px}.intro-copy{padding:25px 0}.intro-copy h2{font-size:23px;margin:0 0 18px}.intro-copy p{line-height:1.9;color:#555;font-size:12px}.intro .btn{margin-top:8px}.stats{min-height:390px;background-image:linear-gradient(rgba(0,73,55,.78),rgba(0,73,55,.88)),url("assets/stats.jpg");background-position:center;background-size:cover;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:55px 10%;text-align:center}.stat{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center}.stat-icon{width:45px;height:45px;border-radius:50%;background:#b8f18f;color:#086247;display:flex;align-items:center;justify-content:center;font-size:24px}.stat strong{font-size:22px;margin-top:10px}.stat span{font-size:11px;margin-top:5px}.services{background:#fff}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.service-card{height:248px;color:#fff;background-position:center;background-size:cover;display:flex;flex-direction:column;justify-content:flex-end;padding:0 14px 14px}.service-card:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.65));z-index:1}.service-card div,.service-card a{position:relative;z-index:2}.service-card div{font-size:15px;font-weight:600;text-shadow:0 1px 2px #000;border-bottom:2px solid #b8f18f;padding-bottom:7px;width:max-content}.service-card a{background:#086247;color:#fff;text-align:center;text-decoration:none;padding:10px;margin-top:10px;font-size:10px}.view-all{display:block;width:110px;text-align:center;margin:35px auto 0}.call-strip{background:linear-gradient(120deg,#09684d,#003d2e);color:#fff;padding:85px 3%;min-height:300px}.call-strip p{max-width:700px;line-height:1.8;font-size:11px}.call-strip h3{font-size:18px;margin-bottom:0}.choose{background:#edf2f5}.choose h2{margin:0 0 10px;font-size:23px}.choose p{font-size:12px}.choose ul{list-style:none;padding:0;margin-top:20px}.choose li{font-size:11px;margin:12px 0}.choose li:before{content:"✓";display:inline-flex;background:#082f24;color:#fff;width:20px;height:20px;align-items:center;justify-content:center;margin-right:10px;font-weight:bold}.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}.work-img{height:430px}.work-img img{width:100%;height:100%;object-fit:cover;display:block}.dots{text-align:center;letter-spacing:6px;color:#555}.areas{background:#edf2f5}.area-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.area-pills span{background:#086247;color:#fff;border-radius:25px;padding:11px 27px;font-size:10px;min-width:175px;text-align:center}.cta{background:#003e2f;color:#fff;padding:35px 3%;min-height:170px}.cta h2{font-size:21px}.cta p{font-size:11px}.cta .btn{margin-right:10px;margin-top:12px}.contact-section{background:#086247;color:#fff}.contact-image{height:320px}.contact-image img{width:100%;height:100%;object-fit:cover;display:block}.contact-overlay{margin-top:-320px;min-height:320px;position:relative;z-index:1;padding:115px 2% 30px;background:linear-gradient(90deg,rgba(0,73,55,.82),rgba(0,73,55,.45))}.contact-overlay h2{font-size:22px}.contact-overlay p{font-size:11px}.form-area{position:relative;z-index:2;padding:28px 2% 55px;background:#086247}.form-area h2{font-size:20px}.form-area p,.form-area b{font-size:11px}.form-area input,.form-area textarea{width:100%;border:0;background:#fff;padding:11px;margin:8px 0;color:#222}.form-area textarea{height:125px;resize:vertical}.checks{display:grid;grid-template-columns:1fr 1fr;margin:8px 0 20px}.checks label,.hear label{font-size:11px;margin:4px 0}.hear{display:flex;flex-direction:column;margin:8px 0 20px}.other-areas{background:#fff}.many{max-width:950px;margin:auto}.many span{background:#fff;color:#17624e;border:1px solid #17624e}.faq h2{font-size:22px;margin-bottom:20px}.faq-item{margin:0}.faq-item button{width:100%;border:0;border-bottom:1px solid #fff;background:#f1f1f1;text-align:left;padding:11px 14px;font-family:inherit;font-size:12px;color:#333;display:flex;justify-content:space-between;cursor:pointer}.faq-item p{display:none;background:#fafafa;margin:0;padding:12px 15px;font-size:11px;color:#555}.faq-item.open p{display:block}footer{background:#086247;color:#fff;padding:60px 0 0;display:grid;grid-template-columns:1.4fr 1fr 1fr .8fr;gap:35px;font-size:11px;position:relative}footer>div{padding:0 2%}footer h3{font-size:15px;margin-top:0}footer p{line-height:1.9}.copyright{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding:15px 2%;font-size:9px;margin-top:20px}.mobile-bar{display:none}.top-btn{position:fixed;right:12px;bottom:62px;background:#086247;color:#fff;border:0;width:24px;height:24px;border-radius:2px;z-index:20}
+
+@media(max-width:700px){
+  body{font-size:12px;padding-bottom:42px}.promo{font-size:9px;height:35px}.brand-row{height:87px;padding:0 6%}.logo-wrap{width:55px;height:55px}.company-name{font-size:10px}.socials{gap:12px;font-size:15px}.nav-row{height:44px;padding-left:25px;overflow:hidden}.nav-row nav{gap:23px;white-space:nowrap}.nav-row a{font-size:10px}.phone-box{min-width:145px;margin-left:20px;padding:9px 25px}.hero{height:760px}.hero-overlay{left:20px;right:15px;top:67%}.hero p{font-size:13px;line-height:1.9}.desktop{display:none}.section{padding:48px 20px}.section-title h2{font-size:21px}.review-grid{grid-template-columns:repeat(3,1fr);gap:10px;overflow:hidden}.review{padding:13px 10px;font-size:9px;min-height:165px}.review .google{right:8px}.review p{font-size:9px}.intro-img,.professional-img{height:365px}.intro-copy h2{font-size:20px}.intro-copy p{font-size:10px;line-height:1.9}.stats{min-height:365px;padding:40px 7%;gap:35px 20px}.stat strong{font-size:19px}.stat span{font-size:9px}.service-grid{gap:10px}.service-card{height:248px;padding:0 10px 10px}.service-card div{font-size:13px}.service-card a{font-size:9px}.call-strip{min-height:315px;padding:80px 14px}.choose h2{font-size:21px}.work-img{height:485px}.area-pills{gap:10px}.area-pills span{padding:10px 13px;min-width:0;flex:1;font-size:9px}.cta{padding:30px 20px}.contact-image{height:300px}.contact-overlay{margin-top:-300px;min-height:300px;padding:145px 14px 20px}.contact-overlay h2{font-size:18px}.form-area{padding:25px 14px 50px}.checks{grid-template-columns:1fr 1fr}.many span{flex:0 0 calc(33.333% - 8px);min-width:0}.faq{padding:45px 14px}.faq h2{font-size:20px}footer{grid-template-columns:1.35fr 1fr 1fr .8fr;gap:12px;padding-top:45px;font-size:9px;overflow:hidden}footer h3{font-size:12px}footer p{line-height:1.8}.mobile-bar{display:flex;position:fixed;z-index:30;bottom:0;left:0;right:0;height:42px}.mobile-bar a{flex:1;text-align:center;padding:13px 5px;text-decoration:none;font-size:10px;background:#b9f48f;color:#15533f}.mobile-bar a+ a{background:#086247;color:#fff}.top-btn{bottom:50px}
 }
-.intro-box{margin:35px 3%;padding:34px 4%;background:#f2f7f6;color:#555;line-height:1.9;font-size:12px;transform-origin:center center;animation:serviceIntroZoomIn .9s cubic-bezier(.22,1,.36,1) both}.intro-box b{color:#16845d}.intro-actions{display:flex;justify-content:space-around;margin-top:25px}.services-section{padding:30px 3% 50px}.eyebrow{text-align:center;color:#19755d;font-size:18px;margin:0}.services-section>h2{text-align:center;font-size:30px;margin:4px 0 30px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-grid article{min-width:0}.service-grid img{display:block;width:100%;height:190px;object-fit:cover}.service-grid h3{font-size:17px;margin:8px 0 3px;color:#176b55}.service-grid p{font-size:11px;line-height:1.7;color:#555;margin:0}.service-cta{min-height:200px;background:linear-gradient(rgba(0,95,72,.8),rgba(0,95,72,.8)),url("assets/hero-banner-buildings.webp") center/cover;color:#c7f78f;text-align:center;padding:70px 20px}.service-cta h2{font-size:22px}.service-cta .btn{margin:10px 15px}.quote{background:#086247;color:#fff;padding:50px 5% 55px}.quote h2{font-size:28px;margin:0}.quote p{font-size:11px}.quote form{margin-top:25px}.quote input,.quote textarea{width:100%;border:0;padding:11px;margin:7px 0;background:#fff;color:#222}.quote textarea{height:125px}.quote b{display:block;font-size:11px;margin-top:12px}.quote em{color:#f55}.checks{display:grid;grid-template-columns:1fr 1fr}.checks label,.hear label{font-size:11px;margin:4px 0}.hear{display:flex;flex-direction:column}.quote button{margin-top:12px;background:#075b43;color:#fff;border:0;padding:12px 28px}.faq{background:#000;color:#075c45;padding:50px 5%}.learn{font-size:17px}.faq h2{font-size:28px;margin:10px 0 25px}.faq-item button{width:100%;border:1px solid #555;border-bottom:0;background:#000;color:#16694f;text-align:left;padding:13px;font-family:inherit;display:flex;justify-content:space-between;font-size:11px}.faq-item:last-child button{border-bottom:1px solid #555}.faq-item p{display:none;margin:0;padding:15px;background:#050505;border-left:1px solid #555;border-right:1px solid #555;color:#555;font-size:11px}.faq-item.open p{display:block}.locations{background:#fff;padding:70px 3% 0}.location-list{background:#f2f7f6;padding:35px;font-size:15px;line-height:2.2;color:#555}.locations iframe{display:block;width:100%;height:430px;border:0}footer{background:#086247;color:#fff;padding:60px 0 0;display:grid;grid-template-columns:1.4fr 1fr 1fr .8fr;gap:35px;font-size:11px}footer>div{padding:0 2%}footer h3{font-size:15px;margin-top:0}footer p{line-height:1.9}.mobile-bar{display:none}.top-btn{position:fixed;right:12px;bottom:62px;background:#086247;color:#fff;border:0;width:24px;height:24px;z-index:20}@media(max-width:700px){body{font-size:12px;padding-bottom:42px}.promo{font-size:9px}.brand-row{height:87px;padding:0 6%}.logo-wrap{width:55px;height:55px}.company-name{font-size:10px}.socials{gap:12px;font-size:15px}.nav-row{height:44px;padding-left:25px;overflow:hidden}.nav-row nav{gap:23px;white-space:nowrap}.nav-row a{font-size:10px}.phone-box{min-width:145px;margin-left:20px;padding:9px 25px}.service-hero{min-height:330px;padding:28px 15px}.hero-copy h1{font-size:30px;line-height:1.45}.hero-copy p{font-size:11px}.intro-box{margin:30px 20px;padding:30px;font-size:10px}.intro-actions{justify-content:space-between}.services-section{padding:25px 20px 45px}.eyebrow{font-size:17px}.services-section>h2{font-size:28px}.service-grid{grid-template-columns:repeat(3,1fr);gap:12px}.service-grid img{height:138px}.service-grid h3{font-size:14px;line-height:1.2}.service-grid p{font-size:9px;line-height:1.55}.service-grid article:nth-child(7),.service-grid article:nth-child(8),.service-grid article:nth-child(15),.service-grid article:nth-child(16){grid-column:span 1}.service-cta{min-height:190px;padding:65px 15px}.service-cta h2{font-size:19px}.quote{padding:45px 20px}.quote h2{font-size:26px}.checks{grid-template-columns:1fr 1fr}.faq{padding:45px 20px}.faq h2{font-size:27px}.locations{padding:50px 20px 0}.location-list{padding:25px;font-size:13px}.locations iframe{height:400px}footer{grid-template-columns:1.35fr 1fr 1fr .8fr;gap:12px;padding-top:45px;font-size:9px;overflow:hidden}footer h3{font-size:12px}footer p{line-height:1.8}.mobile-bar{display:flex;position:fixed;z-index:30;bottom:0;left:0;right:0;height:42px}.mobile-bar a{flex:1;text-align:center;padding:13px 5px;text-decoration:none;font-size:10px;background:#b9f48f;color:#15533f}.mobile-bar a+a{background:#086247;color:#fff}.top-btn{bottom:50px}}
+
+ .promo{position:relative;overflow:hidden}
+.promo:after{content:"";position:absolute;top:0;bottom:0;left:-25%;width:18%;background:rgba(255,255,255,.72);transform:skewX(-20deg);opacity:0;pointer-events:none}
+.promo.blinking{animation:promoTextBlink .8s ease-in-out 1}.promo.blinking:after{animation:promoFlash .7s ease-in-out 1}
+@keyframes promoTextBlink{0%,100%{opacity:1}45%{opacity:.25}}
+@keyframes promoFlash{0%{left:-25%;opacity:0}35%{opacity:.95}100%{left:125%;opacity:0}}
+
+/* Home Services: first 8 visible, remaining cards appear after VIEW ALL. */
+#services .service-grid .service-card:nth-child(n+9){display:none}
+#services .service-grid.expanded .service-card:nth-child(n+9){display:block}
+
+/* Sliders */
+.review-slider,.work-carousel{overflow:hidden;width:100%}
+.review-track{display:flex;gap:14px;transition:transform .6s ease}
+.review-track .review{flex:0 0 calc((100% - 28px)/3)}
+.review-dots{text-align:center;margin-top:14px;letter-spacing:5px}.review-dots span{display:inline-block;width:5px;height:5px;border-radius:50%;background:#aaa;margin:0 3px}.review-dots span.active{background:#086247}
+.work-track{display:flex;transition:transform .8s ease}.work-track .work-img{flex:0 0 100%}
+.collapsed-areas span:nth-child(n+13){display:none}.collapsed-areas.expanded span{display:inline-block}
+.areas-toggle{border:0}
+@media(max-width:700px){
+ .review-track{gap:10px}.review-track .review{flex:0 0 calc((100% - 20px)/3)}
+ .service-grid{grid-template-columns:1fr 1fr}  
+}
 
 /* Final responsive safety */
 html,body{max-width:100%;overflow-x:hidden}
@@ -15,33 +37,2110 @@ img{max-width:100%;height:auto}
 .promo{position:fixed;top:0;left:0;right:0;z-index:5000}
 header{position:fixed;top:35px;left:0;right:0;z-index:4999}
 body{padding-top:166px}
-/* SERVICES PAGE - MOBILE MENU FIX */
+
+/* FINAL FOOTER FIX — no blue links or underlines */
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+}
+
+footer p,
+footer li,
+footer span {
+  color: #ffffff;
+}
+.call-strip a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.call-strip a:hover {
+    color: #fff;
+}
+
+
+/* =========================================================
+   PROFESSIONAL MOBILE REFINEMENT — FINAL OVERRIDES
+   Added to improve spacing, sizing, Areas We Serve, FAQ,
+   Call Strip and Footer on mobile without changing desktop.
+   ========================================================= */
+
+/* Make clickable links look intentional everywhere */
+.call-strip a,
+.call-strip a:link,
+.call-strip a:visited,
+.call-strip a:hover,
+.call-strip a:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Better visual hierarchy for call section */
+.call-strip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-strip h3 {
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+.call-strip p:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+
+  /* General mobile spacing */
+  .section {
+    padding: 44px 20px;
+  }
+
+  .section-title {
+    margin-bottom: 26px;
+  }
+
+  /* Call strip */
+  .call-strip {
+    min-height: auto;
+    padding: 52px 24px 58px;
+  }
+
+  .call-strip p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .call-strip h3 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 28px 0 10px;
+  }
+
+  .call-strip p:last-child a {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .2px;
+  }
+
+  /* AREAS WE SERVE — cleaner professional button layout */
+  .areas {
+    padding: 48px 20px 54px;
+  }
+
+  .areas .section-title h2 {
+    font-size: 25px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .areas .section-title p {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 420px;
+  }
+
+  .area-pills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+    width: 100%;
+    max-width: 520px;
+    margin: 24px auto 0;
+  }
+
+  .area-pills span {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.35;
+    box-shadow: 0 3px 10px rgba(8, 98, 71, .10);
+  }
+
+  /* If the area names are anchor links */
+  .area-pills a {
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #086247;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.35;
+    box-shadow: 0 3px 10px rgba(8, 98, 71, .10);
+  }
+
+  /* FAQ — compact and premium-looking */
+  .faq {
+    padding: 48px 20px 58px;
+  }
+
+  .faq h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .faq-item {
+    margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+  }
+
+  .faq-item button {
+    min-height: 58px;
+    padding: 14px 16px;
+    font-size: 13px;
+    line-height: 1.4;
+    background: #ffffff;
+  }
+
+  .faq-item button span:last-child {
+    font-size: 19px;
+    line-height: 1;
+    margin-left: 14px;
+  }
+
+  .faq-item p {
+    padding: 14px 16px 16px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  /* Footer — replace cramped 4-column mobile layout with readable layout */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 22px;
+    padding: 48px 22px 0;
+    font-size: 11px;
+    overflow: visible;
+  }
+
+  footer > div {
+    padding: 0;
+    min-width: 0;
+  }
+
+  footer > div:first-child,
+  footer > div:nth-child(2) {
+    grid-column: auto;
+  }
+
+  footer h3 {
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 0 0 14px;
+  }
+
+  footer p {
+    margin: 0 0 8px;
+    line-height: 1.75;
+  }
+
+  footer a {
+    display: inline-block;
+    margin-bottom: 5px;
+    line-height: 1.55;
+  }
+
+  footer .copyright {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+    padding: 18px 0 20px;
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Office and locations become full-width rows for readability */
+  footer > div:nth-last-child(3),
+  footer > div:nth-last-child(2) {
+    grid-column: 1 / -1;
+  }
+
+  /* Bottom mobile buttons stay balanced */
+  .mobile-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: .5px;
+  }
+
+  .top-btn {
+    width: 38px;
+    height: 38px;
+    right: 14px;
+    bottom: 56px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer > div,
+  footer > div:first-child,
+  footer > div:nth-child(2),
+  footer > div:nth-last-child(3),
+  footer > div:nth-last-child(2) {
+    grid-column: 1;
+  }
+
+  .area-pills span,
+  .area-pills a {
+    font-size: 11px;
+  }
+}
+/* =========================================================
+   FINAL PROFESSIONAL MOBILE FIX
+   Perfect Building Contractor LTD
+   ========================================================= */
+
+
+/* -------------------------------
+   AREAS WE SERVE
+-------------------------------- */
+
+.areas {
+    background: #edf2f5;
+    padding: 55px 20px 60px;
+}
+
+.areas .section-title {
+    text-align: center;
+}
+
+.areas .section-title h2 {
+    font-size: 25px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.areas .section-title p {
+    max-width: 430px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #5b6b68;
+}
+
+
+/* Area buttons */
+
+.area-pills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+    max-width: 520px;
+    margin: 28px auto 0;
+}
+
+.area-pills a,
+.area-pills a:link,
+.area-pills a:visited,
+.area-pills a:hover,
+.area-pills a:active,
+.area-pills a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 54px;
+
+    padding: 14px 18px;
+
+    background: #ffffff;
+
+    color: #15533f !important;
+
+    border: 1px solid rgba(8, 98, 71, 0.18);
+
+    border-radius: 10px;
+
+    text-decoration: none !important;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.2px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 12px rgba(8, 98, 71, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.area-pills a:hover {
+    background: #086247;
+
+    color: #ffffff !important;
+
+    border-color: #086247;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(8, 98, 71, 0.18);
+}
+
+
+/* -------------------------------
+   CALL STRIP
+-------------------------------- */
+
+.call-strip {
+    padding: 65px 24px;
+    min-height: auto;
+}
+
+.call-strip p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.call-strip h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 28px 0 12px;
+}
+
+.call-strip p:last-child a {
+    display: inline-block;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+
+/* -------------------------------
+   CTA SECTION
+-------------------------------- */
+
+.cta {
+    padding: 55px 24px;
+}
+
+.cta h2 {
+    font-size: 27px;
+    line-height: 1.35;
+}
+
+.cta p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* -------------------------------
+   FAQ
+-------------------------------- */
+
+.faq {
+    padding: 55px 20px 60px;
+}
+
+.faq h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.faq-item button {
+    min-height: 60px;
+
+    padding: 16px 18px;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    background: #ffffff;
+}
+
+.faq-item p {
+    padding: 16px 18px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROFESSIONAL MOBILE FOOTER
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    footer {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 32px 22px;
+
+        padding: 50px 22px 0;
+
+        font-size: 12px;
+
+        overflow: visible;
+    }
+
+    footer > div {
+        padding: 0;
+
+        min-width: 0;
+    }
+
+    footer h3 {
+        font-size: 16px;
+
+        line-height: 1.35;
+
+        margin: 0 0 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+
+        line-height: 1.75;
+
+        margin: 0 0 9px;
+    }
+
+    footer a,
+    footer a:link,
+    footer a:visited,
+    footer a:hover,
+    footer a:active {
+        color: #ffffff !important;
+
+        text-decoration: none !important;
+
+        display: inline-block;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        margin-bottom: 5px;
+    }
+
+    /* Office and Locations full width */
+
+    footer > div:nth-last-child(3),
+    footer > div:nth-last-child(2) {
+        grid-column: 1 / -1;
+    }
+
+    footer .copyright {
+        grid-column: 1 / -1;
+
+        margin-top: 10px;
+
+        padding: 20px 0;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* Bottom mobile bar */
+
+    .mobile-bar {
+        height: 48px;
+    }
+
+    .mobile-bar a {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 0;
+
+        font-size: 12px;
+
+        font-weight: 600;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    /* Scroll to top button */
+
+    .top-btn {
+        width: 38px;
+
+        height: 38px;
+
+        right: 14px;
+
+        bottom: 60px;
+
+        border-radius: 6px;
+    }
+
+}
+
+
+/* Small mobile screens */
+
+@media (max-width: 420px) {
+
+    footer {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    footer > div,
+    footer > div:first-child,
+    footer > div:nth-child(2),
+    footer > div:nth-last-child(3),
+    footer > div:nth-last-child(2) {
+        grid-column: 1;
+    }
+
+    .area-pills a {
+        font-size: 12px;
+    }
+
+}
+/* =========================================================
+   FINAL MOBILE VISUAL POLISH
+   VISUAL ONLY — NO SEO / HTML / LINKS CHANGED
+   ========================================================= */
+
+/* ---------- GENERAL MOBILE TYPOGRAPHY ---------- */
+@media (max-width: 700px) {
+
+  body {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- AREAS WE SERVE ---------- */
+
+  .areas,
+  section.areas.section {
+    padding: 52px 22px 58px !important;
+    background: #edf2f5 !important;
+  }
+
+  .areas .section-title {
+    margin-bottom: 26px !important;
+    text-align: center !important;
+  }
+
+  .areas .section-title h2,
+  .areas h2.label {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 16px !important;
+  }
+
+  .areas .section-title p {
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    font-weight: 400 !important;
+    color: #61706c !important;
+  }
+
+  /* Force a clean professional grid */
+  .areas .area-pills {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 28px auto 0 !important;
+  }
+
+  /* Remove ALL default browser link styling */
+  .areas .area-pills a,
+  .areas .area-pills a:link,
+  .areas .area-pills a:visited,
+  .areas .area-pills a:hover,
+  .areas .area-pills a:active,
+  .areas .area-pills a:focus {
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 58px !important;
+
+    margin: 0 !important;
+    padding: 12px 10px !important;
+
+    background: #ffffff !important;
+    color: #15533f !important;
+
+    border: 1px solid rgba(8, 98, 71, 0.16) !important;
+    border-radius: 8px !important;
+
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+
+    font-family: inherit !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+
+    line-height: 1.35 !important;
+    letter-spacing: 0.15px !important;
+
+    text-align: center !important;
+
+    box-shadow: 0 2px 8px rgba(8, 98, 71, 0.07) !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+
+    transform: none !important;
+    text-shadow: none !important;
+
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Remove odd visited / blue mobile browser colour */
+  .areas .area-pills a:visited {
+    color: #15533f !important;
+  }
+
+  /* Keep touch effect subtle */
+  .areas .area-pills a:active {
+    background: #f4f8f6 !important;
+    transform: scale(0.98) !important;
+  }
+
+
+  /* ---------- CALL STRIP ---------- */
+
+  .call-strip {
+    padding: 54px 24px 58px !important;
+    min-height: auto !important;
+  }
+
+  .call-strip p {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+  }
+
+  .call-strip h3 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin: 26px 0 10px !important;
+  }
+
+  .call-strip p:last-child a,
+  .call-strip p:last-child a:link,
+  .call-strip p:last-child a:visited {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .cta {
+    padding: 54px 24px !important;
+  }
+
+  .cta h2 {
+    font-size: 26px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .cta p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* ---------- FAQ ---------- */
+
+  .faq {
+    padding: 52px 22px 58px !important;
+  }
+
+  .faq h2 {
+    font-size: 25px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .faq-item {
+    margin-bottom: 10px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+  }
+
+  .faq-item button {
+    min-height: 60px !important;
+    padding: 16px 18px !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .faq-item p {
+    padding: 16px 18px !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 34px 24px !important;
+    padding: 52px 22px 0 !important;
+    overflow: visible !important;
+  }
+
+  footer > div {
+    min-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  footer h3 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin: 0 0 15px !important;
+  }
+
+  footer p,
+  footer a {
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+  }
+
+  footer a,
+  footer a:link,
+  footer a:visited,
+  footer a:hover,
+  footer a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  footer .copyright {
+    grid-column: 1 / -1 !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    padding: 20px 0 !important;
+  }
+
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 420px) {
+
+  .areas .area-pills {
+    grid-template-columns: 1fr !important;
+  }
+
+  .areas .area-pills a {
+    min-height: 52px !important;
+    font-size: 12px !important;
+  }
+
+}
+/* =========================================================
+   FINAL PREMIUM HEADER IMPROVEMENT
+   Logo + Company Name + VAT Registration
+   VISUAL ONLY — NO SEO / LINKS / HTML STRUCTURE CHANGED
+   ========================================================= */
+
+
+/* ---------- DESKTOP / GENERAL HEADER ---------- */
+
+.brand-row {
+    min-height: 96px;
+}
+
+.logo-wrap {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+}
+
+.company-name {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-name::after {
+    content: "VAT Registered No: 525 8586 56";
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    color: #c8f5a9;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   MOBILE HEADER — PREMIUM VERSION
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Header brand section slightly taller
+       so larger logo and VAT fit comfortably */
+
+    .brand-row {
+        height: 96px !important;
+        min-height: 96px !important;
+
+        padding: 0 5% !important;
+
+        gap: 12px;
+    }
+
+
+    /* Bigger professional logo */
+
+    .logo-wrap {
+        width: 68px !important;
+        height: 68px !important;
+
+        flex: 0 0 68px !important;
+
+        border-radius: 50%;
+    }
+
+
+    .logo-wrap img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Company identity */
+
+    .company-name {
+        flex: 1;
+
+        min-width: 0;
+
+        font-size: 14px !important;
+
+        font-weight: 700 !important;
+
+        line-height: 1.3;
+
+        letter-spacing: 0.05px;
+
+        white-space: nowrap;
+    }
+
+
+    /* VAT registration below company name */
+
+    .company-name::after {
+
+        content: "VAT Registered No: 525 8586 56";
+
+        display: block;
+
+        margin-top: 4px;
+
+        font-size: 8.5px;
+
+        font-weight: 500;
+
+        line-height: 1.4;
+
+        letter-spacing: 0.15px;
+
+        color: #c8f5a9;
+
+        white-space: nowrap;
+    }
+
+
+    /* Keep social icons balanced
+       so company name has enough space */
+
+    .socials {
+
+        gap: 9px !important;
+
+        font-size: 14px !important;
+
+        flex-shrink: 0;
+    }
+
+
+    .socials span:nth-child(3) {
+        font-size: 12px !important;
+    }
+
+
+    /* Navigation remains below cleanly */
+
+    .nav-row {
+        height: 44px !important;
+    }
+
+
+    /* Header is fixed, so correct top spacing */
+
+    body {
+        padding-top: 175px !important;
+    }
+
+}
+
+
+/* Extra small mobile screens */
+
+@media (max-width: 420px) {
+
+    .brand-row {
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+
+        gap: 8px;
+    }
+
+
+    .logo-wrap {
+        width: 62px !important;
+        height: 62px !important;
+
+        flex-basis: 62px !important;
+    }
+
+
+    .company-name {
+        font-size: 12px !important;
+    }
+
+
+    .company-name::after {
+        font-size: 7.5px !important;
+    }
+
+
+    .socials {
+        gap: 7px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+   PERFECT BUILDING CONTRACTOR LTD — FINAL VISUAL OVERRIDE
+   Header + VAT + Areas We Serve
+   VISUAL ONLY — NO SEO / HTML / LINKS / CONTENT CHANGED
+   ========================================================= */
+
+/* HEADER */
+.brand-row{min-height:100px!important;height:100px!important;padding:0 5.5%!important;gap:16px!important}
+.logo-wrap{width:76px!important;height:76px!important;flex:0 0 76px!important}
+.logo-wrap img{width:100%!important;height:100%!important;object-fit:cover!important}
+.company-name{flex:1 1 auto!important;min-width:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important;font-size:18px!important;font-weight:700!important;line-height:1.25!important;letter-spacing:.1px!important;white-space:nowrap!important}
+.company-name::after{content:"VAT Registered No: 525 8586 56"!important;display:block!important;margin-top:5px!important;font-size:11px!important;font-weight:600!important;line-height:1.35!important;letter-spacing:.15px!important;color:#c8f5a9!important;white-space:nowrap!important}
+.socials{flex:0 0 auto!important;gap:16px!important;font-size:17px!important}
+.socials span:nth-child(3){font-size:14px!important}
+body{padding-top:179px!important}
+
+/* AREAS WE SERVE — remove blur, blue links and underlines */
+.areas,section.areas.section{background:#edf2f5!important;padding:58px 22px 64px!important}
+.areas .section-title{text-align:center!important;margin-bottom:30px!important}
+.areas .section-title h2,.areas h2.label{font-size:26px!important;line-height:1.25!important;font-weight:700!important;letter-spacing:1.2px!important;margin:0 0 14px!important}
+.areas .section-title p{max-width:520px!important;margin:0 auto!important;font-size:14px!important;line-height:1.65!important;color:#61706c!important}
+.areas .area-pills{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important;width:100%!important;max-width:1100px!important;margin:30px auto 0!important}
+.areas .area-pills a,.areas .area-pills a:link,.areas .area-pills a:visited,.areas .area-pills a:hover,.areas .area-pills a:active,.areas .area-pills a:focus{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;min-height:58px!important;margin:0!important;padding:12px 14px!important;background:#fff!important;color:#15533f!important;border:1px solid rgba(8,98,71,.16)!important;border-radius:8px!important;font-family:Poppins,Arial,sans-serif!important;font-size:12px!important;font-weight:600!important;line-height:1.35!important;letter-spacing:.15px!important;text-align:center!important;text-decoration:none!important;-webkit-text-decoration:none!important;opacity:1!important;filter:none!important;-webkit-filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;text-shadow:none!important;box-shadow:0 2px 10px rgba(8,98,71,.07)!important;transform:none!important}
+.areas .area-pills a:hover{background:#f6faf8!important;border-color:rgba(8,98,71,.32)!important}
+
+/* MOBILE */
+@media(max-width:700px){
+.brand-row{height:102px!important;min-height:102px!important;padding:0 5%!important;gap:10px!important}
+.logo-wrap{width:66px!important;height:66px!important;flex:0 0 66px!important}
+.company-name{font-size:14px!important;font-weight:700!important;line-height:1.25!important;letter-spacing:0!important;white-space:nowrap!important}
+.company-name::after{margin-top:4px!important;font-size:8.8px!important;font-weight:600!important;line-height:1.3!important;letter-spacing:0!important}
+.socials{gap:8px!important;font-size:14px!important}
+.socials span:nth-child(3){font-size:12px!important}
+.nav-row{height:44px!important}
+body{padding-top:181px!important}
+.areas,section.areas.section{padding:52px 20px 58px!important}
+.areas .section-title h2,.areas h2.label{font-size:24px!important;letter-spacing:1px!important}
+.areas .section-title p{max-width:340px!important;font-size:13px!important}
+.areas .area-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:26px!important}
+.areas .area-pills a,.areas .area-pills a:link,.areas .area-pills a:visited,.areas .area-pills a:hover,.areas .area-pills a:active,.areas .area-pills a:focus{min-height:60px!important;padding:10px 8px!important;font-size:10.5px!important;line-height:1.35!important;border-radius:7px!important}
+}
+
+/* SMALL PHONES */
+@media(max-width:420px){
+.brand-row{padding:0 4%!important;gap:8px!important}
+.logo-wrap{width:60px!important;height:60px!important;flex-basis:60px!important}
+.company-name{font-size:12px!important}
+.company-name::after{font-size:7.6px!important}
+.socials{gap:6px!important;font-size:12px!important}
+.socials span:nth-child(3){font-size:10px!important}
+.areas .area-pills{grid-template-columns:1fr!important}
+.areas .area-pills a{min-height:54px!important;font-size:12px!important}
+}
+
+
+/* =========================================================
+   CLEAN FINAL VISUAL OVERRIDE — 05 SEP 2026
+   Header identity + VAT + Areas links
+   CSS visual changes only. SEO/content/URLs are untouched.
+   ========================================================= */
+
+/* HEADER: stronger company identity */
+.brand-row{
+  min-height:100px !important;
+  height:100px !important;
+  gap:14px !important;
+}
+
+.logo-wrap{
+  width:76px !important;
+  height:76px !important;
+  flex:0 0 76px !important;
+}
+
+.logo-wrap img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+}
+
+.company-name{
+  display:flex !important;
+  flex:1 1 auto !important;
+  min-width:0 !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  font-size:17px !important;
+  font-weight:800 !important;
+  line-height:1.25 !important;
+  letter-spacing:.05px !important;
+  white-space:nowrap !important;
+}
+
+.company-name::after{
+  content:"VAT Registered No: 525 8586 56" !important;
+  display:block !important;
+  margin-top:5px !important;
+  font-size:10.5px !important;
+  font-weight:600 !important;
+  line-height:1.35 !important;
+  letter-spacing:.1px !important;
+  color:#c8f5a9 !important;
+  white-space:nowrap !important;
+}
+
+/* Keep social icons from squeezing the company name */
+.socials{
+  flex:0 0 auto !important;
+  gap:12px !important;
+}
+
+/* Fixed promo/header spacing */
+body{padding-top:201px !important;}
+
+
+/* AREAS WE SERVE: preserve real SEO links, change appearance only */
+.area-pills{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  gap:12px !important;
+}
+
+.area-pills a,
+.area-pills a:link,
+.area-pills a:visited,
+.area-pills a:hover,
+.area-pills a:active,
+.area-pills a:focus{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:150px !important;
+  min-height:48px !important;
+  padding:10px 16px !important;
+  box-sizing:border-box !important;
+  background:#ffffff !important;
+  color:#15533f !important;
+  border:1px solid rgba(8,98,71,.18) !important;
+  border-radius:8px !important;
+  font-size:12px !important;
+  font-weight:600 !important;
+  line-height:1.35 !important;
+  text-align:center !important;
+  text-decoration:none !important;
+  -webkit-text-decoration:none !important;
+  opacity:1 !important;
+  filter:none !important;
+  -webkit-filter:none !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  text-shadow:none !important;
+  box-shadow:0 2px 8px rgba(8,98,71,.07) !important;
+}
+
+.area-pills a:hover,
+.area-pills a:focus{
+  color:#ffffff !important;
+  background:#086247 !important;
+  border-color:#086247 !important;
+}
+
+
+/* MOBILE */
+@media(max-width:700px){
+
+  .brand-row{
+    min-height:96px !important;
+    height:96px !important;
+    padding:0 5% !important;
+    gap:10px !important;
+  }
+
+  .logo-wrap{
+    width:66px !important;
+    height:66px !important;
+    flex:0 0 66px !important;
+  }
+
+  .company-name{
+    font-size:14px !important;
+    font-weight:800 !important;
+    line-height:1.25 !important;
+  }
+
+  .company-name::after{
+    margin-top:4px !important;
+    font-size:8.5px !important;
+    line-height:1.3 !important;
+  }
+
+  .socials{
+    gap:7px !important;
+    font-size:13px !important;
+  }
+
+  body{padding-top:175px !important;}
+
+  .area-pills{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    width:100% !important;
+    gap:10px !important;
+  }
+
+  .area-pills a,
+  .area-pills a:link,
+  .area-pills a:visited,
+  .area-pills a:hover,
+  .area-pills a:active,
+  .area-pills a:focus{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:58px !important;
+    padding:10px 8px !important;
+    font-size:11px !important;
+    border-radius:7px !important;
+  }
+}
+
+@media(max-width:420px){
+  .logo-wrap{
+    width:60px !important;
+    height:60px !important;
+    flex-basis:60px !important;
+  }
+
+  .company-name{font-size:12px !important;}
+  .company-name::after{font-size:7.4px !important;}
+  .socials{gap:5px !important;font-size:11px !important;}
+
+  .area-pills{
+    grid-template-columns:1fr !important;
+  }
+
+  .area-pills a{
+    min-height:52px !important;
+    font-size:12px !important;
+  }
+}
+@media (max-width: 768px) {
+    .hero-content {
+        transform: translateY(-45px);
+    }
+}
+/* MOBILE HEADER:
+   Keep Logo + Company Name + VAT
+   Remove ONLY social media icons
+*/
+
+@media (max-width: 700px) {
+
+    .socials {
+        display: none !important;
+    }
+
+}
+/* REMOVE HEADER SOCIAL ICONS ON MOBILE ONLY */
+@media (max-width: 700px) {
+
+    header .brand-row .socials {
+        display: none !important;
+        visibility: hidden !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+    }
+
+}
+/* =========================================
+   MOBILE HEADER & HAMBURGER MENU
+========================================= */
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.vat-number {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 34px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 8px;
+}
+
+/* Mobile layout */
 @media (max-width: 768px) {
 
-    .main-nav {
-        display: none !important;
-        width: 100% !important;
-        flex-direction: column !important;
-        position: relative !important;
-        background: #155d4b !important;
-        z-index: 9999 !important;
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 1001;
     }
+
+    .company-name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .vat-number {
+        font-size: 13px;
+    }
+
+    /* Hide normal navigation initially */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #145c4b;
+        z-index: 1000;
+        padding: 15px 0;
+    }
+
+    /* Show menu when opened */
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: left;
+    }
+
+    /* Hide phone box on mobile */
+    .phone-box {
+        display: none;
+    }
+
+    /* Mobile navigation row */
+    .nav-row {
+        position: relative;
+    }
+}
+@media (max-width: 768px) {
+    .promo {
+        text-align: center;
+        padding: 14px 15px;
+        line-height: 1.5;
+    }
+
+    .promo-line-1,
+    .promo-line-2 {
+        display: block;
+    }
+
+    .promo-line-1 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .promo-line-2 {
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+}
+/* =========================================
+   RESPONSIVE AUTO-SIZING - MOBILE FIRST
+========================================= */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Images automatically fit every screen */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container protection */
+section,
+header,
+main,
+footer,
+div {
+  max-width: 100%;
+}
+
+/* Responsive typography */
+h1 {
+  font-size: clamp(32px, 7vw, 72px);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(26px, 5vw, 48px);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+/* Hero content */
+.hero-content {
+  width: min(90%, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
+
+@media (max-width: 768px) {
+
+  .promo {
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .brand-row {
+    padding: 22px 35px;
+    min-height: 160px;
+  }
+
+  .company-name {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .vat-number {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 10vw, 56px);
+    line-height: 1.12;
+  }
+
+  .hero p {
+    font-size: clamp(18px, 5vw, 24px);
+    line-height: 1.5;
+  }
+
+  .tag {
+    font-size: 18px;
+    padding: 16px 25px;
+  }
+
+  /* Mobile menu */
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .brand-row {
+    padding: 20px 25px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .vat-number {
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 46px);
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .tag {
+    font-size: 17px;
+  }
+}
+/* =========================================================
+   PERFECT BUILDING CONTRACTOR LTD
+   FINAL CLEAN RESPONSIVE HEADER
+   Desktop + Mobile + Hamburger Menu
+   ========================================================= */
+
+
+/* =========================
+   PROMO BAR
+========================= */
+
+.promo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #086247;
+    color: #c8f5a9;
+
+    text-align: center;
+
+    padding: 0 12px;
+
+    z-index: 5000;
+    overflow: hidden;
+}
+
+
+/* =========================
+   FIXED HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+
+    background: #086247;
+    color: #ffffff;
+
+    z-index: 4999;
+}
+
+
+/* =========================
+   BRAND ROW
+========================= */
+
+.brand-row {
+    height: 100px;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 5.5%;
+    gap: 16px;
+
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-wrap {
+    width: 76px;
+    height: 76px;
+
+    flex: 0 0 76px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   COMPANY DETAILS
+========================= */
+
+.company-details {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    color: #ffffff;
+
+    white-space: nowrap;
+}
+
+.vat-number {
+    margin-top: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #c8f5a9;
+}
+
+
+/* =========================
+   HAMBURGER BUTTON
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   NAVIGATION ROW
+========================= */
+
+.nav-row {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 3.5%;
+
+    border-bottom: 3px solid #ffffff;
+}
+
+.nav-row nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-row a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.phone-box {
+    background: #ffffff !important;
+    color: #333333 !important;
+
+    padding: 10px 45px;
+
+    margin-right: 2%;
+    min-width: 145px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   DESKTOP PAGE SPACING
+========================= */
+
+body {
+    padding-top: 179px;
+}
+
+
+/* =========================================================
+   MOBILE VERSION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+
+    /* PROMO */
+
+    .promo {
+        height: 52px;
+        min-height: 52px;
+
+        padding: 5px 12px;
+
+        flex-direction: column;
+        line-height: 1.3;
+    }
+
+    .promo-line-1,
+    .promo-line-2 {
+        display: block;
+        width: 100%;
+
+        white-space: normal;
+    }
+
+    .promo-line-1 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .promo-line-2 {
+        margin-top: 2px;
+
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+
+    /* HEADER POSITION */
+
+    header {
+        top: 52px;
+    }
+
+
+    /* BRAND ROW */
+
+    .brand-row {
+        height: 88px;
+        min-height: 88px;
+
+        padding: 0 16px;
+        gap: 10px;
+
+        border-bottom: none;
+    }
+
+
+    /* LOGO */
+
+    .logo-wrap {
+        width: 62px;
+        height: 62px;
+
+        flex: 0 0 62px;
+    }
+
+
+    /* COMPANY NAME */
+
+    .company-name {
+        font-size: 14px;
+        font-weight: 700;
+
+        line-height: 1.25;
+
+        white-space: nowrap;
+    }
+
+
+    /* VAT */
+
+    .vat-number {
+        margin-top: 4px;
+
+        font-size: 8.5px;
+        font-weight: 600;
+
+        white-space: nowrap;
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        padding: 0;
+
+        font-size: 36px;
+
+        margin-left: auto;
+
+        z-index: 10001;
+    }
+
+
+    /* NAVIGATION CONTAINER */
+
+    .nav-row {
+        position: relative;
+
+        height: 0;
+        min-height: 0;
+
+        padding: 0;
+        margin: 0;
+
+        border: none;
+
+        overflow: visible;
+    }
+
+
+    /* MENU CLOSED */
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        background: #086247;
+
+        border-top: 1px solid rgba(255,255,255,.15);
+
+        z-index: 10000;
+    }
+
+
+    /* MENU OPEN */
 
     .main-nav.active {
         display: flex !important;
     }
 
-    .main-nav.active a {
-        display: block !important;
-        width: 100% !important;
-        padding: 18px 25px !important;
-        color: #ffffff !important;
-        text-decoration: none !important;
-        box-sizing: border-box !important;
-        border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+
+    /* MENU LINKS */
+
+    .main-nav a {
+        display: block;
+
+        width: 100%;
+
+        padding: 17px 24px;
+
+        color: #ffffff;
+
+        font-size: 16px;
+        font-weight: 500;
+
+        text-align: left;
+
+        border-bottom: 1px solid rgba(255,255,255,.12);
     }
 
-    .nav-row {
-        display: none !important;
+
+    /* PHONE */
+
+    .phone-box {
+        display: none;
     }
+
+
+    /* PAGE SPACING */
+
+    body {
+        padding-top: 140px;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 420px) {
+
+    .brand-row {
+        padding: 0 12px;
+        gap: 8px;
+    }
+
+    .logo-wrap {
+        width: 58px;
+        height: 58px;
+
+        flex-basis: 58px;
+    }
+
+    .company-name {
+        font-size: 12px;
+    }
+
+    .vat-number {
+        font-size: 7.5px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+
+        font-size: 32px;
+    }
+}
+
+
+/* =========================================================
+   FINAL SERVICES MOBILE MENU OVERRIDE
+   This is intentionally last so it overrides older menu rules.
+   ========================================================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 52px !important;
+    height: 52px !important;
+    margin-left: auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    color: #ffffff !important;
+    font-size: 36px !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 30002 !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+    line-height: 1 !important;
+    pointer-events: none !important;
+  }
+
+  /* Closed by default */
+  .nav-row {
+    display: none !important;
+  }
+
+  /* Open only when the hamburger is pressed */
+  .nav-row.active {
+    display: block !important;
+    position: fixed !important;
+    top: 140px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #175f4b !important;
+    border-top: 1px solid rgba(255,255,255,.14) !important;
+    z-index: 30001 !important;
+  }
+
+  .nav-row.active .main-nav {
+    display: flex !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    background: #175f4b !important;
+    overflow: visible !important;
+  }
+
+  .nav-row.active .main-nav a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 18px 25px !important;
+    color: #ffffff !important;
+    background: #175f4b !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(255,255,255,.14) !important;
+  }
+
+  .nav-row.active .main-nav a:hover,
+  .nav-row.active .main-nav a:focus {
+    background: #123f33 !important;
+    color: #ffffff !important;
+  }
+
+  .nav-row.active .phone-box {
+    display: none !important;
+  }
 }
