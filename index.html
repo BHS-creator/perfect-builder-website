@@ -392,7 +392,10 @@ img {
 <div class="form-area">
 <h2>Schedule Free Consultation</h2>
 <p>Ready to work together? Tell us about your project.</p>
-<form id="contactForm">
+<form action="https://formsubmit.co/info@perfectbuilder.uk" id="contactForm" method="POST">
+<input name="_subject" type="hidden" value="New Website Enquiry - Perfect Building Contractor LTD"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
 <label for="name">Your name</label>
 <input autocomplete="name" id="name" name="name" placeholder="Enter your name" required="" type="text"/>
 <label for="email">Email address</label>
@@ -463,7 +466,7 @@ img {
       ☎ <a href="tel:+443301338689">0330 133 8689</a><br/>
       ✉ <a href="mailto:info@perfectbuilders.uk">info@perfectbuilders.uk</a>
 </p>
-<p>Mon-Sat 9:00 AM - 5:00 PM,<br/>Sunday 9:00 AM - 4:00 PM</p>
+<p>Monday - Friday 9:00 AM - 5:00 PM,<br/>Saturday 9:00 AM - 1:00 PM,<br/>Sunday Closed</p>
 </div>
 <div>
 <h3>Our Locations</h3>
@@ -480,69 +483,6 @@ img {
 </div>
 <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a> | <a href="cookie-policy.html">Cookie Policy</a> | <a href="terms-conditions.html">Terms &amp; Conditions</a> | <a href="accessibility.html">Accessibility</a></div><div class="copyright">Copyright © 2026 Perfect Building Contractor LTD | Design By Website BHS</div>
 </footer>
-<!-- Supabase contact-form connection -->
-<script>
-    /*
-      IMPORTANT: Replace ONLY these two values with your Supabase project
-      URL and the browser-safe anon/publishable key. Never put a service_role
-      or secret key in this file.
-    */
-    const SUPABASE_URL = "https://tbbnuusdslerhircsulg.supabase.co";
-    const SUPABASE_ANON_KEY = "sb_publishable_KkuV1RbgnKPy45NSOwCLtA_r7LK2hTk";
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const form = document.getElementById("contactForm");
-      const button = document.getElementById("submitBtn");
-      const status = document.getElementById("formStatus");
-
-      if (!form) return;
-
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        const data = {
-          name: document.getElementById("name").value.trim(),
-          email: document.getElementById("email").value.trim(),
-          phone: document.getElementById("phone").value.trim(),
-          property: document.getElementById("property").value.trim(),
-          work: document.querySelector('input[name="work"]:checked')?.value || "",
-          hear: document.querySelector('input[name="hear"]:checked')?.value || "",
-          message: document.getElementById("message").value.trim()
-        };
-
-        button.disabled = true;
-        button.textContent = "SENDING...";
-        status.textContent = "Sending your enquiry...";
-
-        try {
-          const response = await fetch(SUPABASE_URL + "/rest/v1/contact_submissions", {
-            method: "POST",
-            headers: {
-              "apikey": SUPABASE_ANON_KEY,
-              "Authorization": "Bearer " + SUPABASE_ANON_KEY,
-              "Content-Type": "application/json",
-              "Prefer": "return=minimal"
-            },
-            body: JSON.stringify(data)
-          });
-
-          if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(errorText || "Unable to submit enquiry.");
-          }
-
-          form.reset();
-          status.textContent = "Thank you! Your enquiry has been sent successfully. We will contact you soon.";
-        } catch (error) {
-          console.error("Supabase contact form error:", error);
-          status.textContent = "Sorry, your enquiry could not be sent. Please try again or call us on 07391 931969.";
-        } finally {
-          button.disabled = false;
-          button.textContent = "SEND MESSAGE";
-        }
-      });
-    });
-  </script>
 <div class="mobile-bar">
 <a href="contact.html">CONTACT</a>
 <a href="tel:+447391931969">CALL</a>
