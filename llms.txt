@@ -1,0 +1,43 @@
+# Perfect Building Contractor Ltd
+
+> Machine-readable business information for search and AI systems.
+
+## Primary website
+https://www.perfectbuilders.uk/
+
+## Main services
+- House extensions
+- Loft conversions
+- Garage conversions
+- Renovation and refurbishment
+- New builds
+- Structural and retaining works
+- Roofing
+- Windows and doors
+- Kitchens and bathrooms
+- Flooring
+- Joinery and carpentry
+- Tiling
+- Building alterations
+
+## Service areas
+Sheffield
+Rotherham
+Doncaster
+Barnsley
+Leeds
+Bradford
+Halifax
+South Yorkshire
+West Yorkshire
+
+## Useful pages
+- https://www.perfectbuilders.uk/services.html
+- https://www.perfectbuilders.uk/projects.html
+- https://www.perfectbuilders.uk/contact.html
+- https://www.perfectbuilders.uk/seo/faqs-sheffield.html
+- https://www.perfectbuilders.uk/seo/areas-we-cover.html
+- https://www.perfectbuilders.uk/seo/business-information.html
+
+## Important
+This file is supplementary machine-readable information. It does not guarantee inclusion, ranking or citation by any search engine or AI system.
