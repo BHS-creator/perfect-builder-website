@@ -68,8 +68,10 @@
 }
 
 
-/* Mobile modal priority fix: keep document forms above the mobile navigation/header. */
+/* Mobile modal priority fix: modal-root is outside #admin-app, so use global selectors. */
 @media (max-width:650px){
-  #admin-app .modal-backdrop{z-index:1000!important;}
-  #admin-app .modal{position:relative!important;z-index:1001!important;max-height:calc(100dvh - 16px)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;}
+  #modal-root{position:relative;z-index:9999!important;}
+  #modal-root .modal-backdrop{z-index:9999!important;position:fixed!important;inset:0!important;padding:8px!important;}
+  #modal-root .modal{position:relative!important;z-index:10000!important;width:100%!important;max-width:100%!important;max-height:calc(100dvh - 16px)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;padding:15px!important;}
+  #modal-root .modal-foot{position:sticky;bottom:0;background:#fff;padding-top:10px;flex-wrap:wrap;z-index:2;}
 }
