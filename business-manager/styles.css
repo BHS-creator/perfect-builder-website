@@ -75,3 +75,13 @@
   #modal-root .modal{position:relative!important;z-index:10000!important;width:100%!important;max-width:100%!important;max-height:calc(100dvh - 16px)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;padding:15px!important;}
   #modal-root .modal-foot{position:sticky;bottom:0;background:#fff;padding-top:10px;flex-wrap:wrap;z-index:2;}
 }
+
+/* Mobile modal controls fix: keep preview Print/Save and editor Save buttons visible and reachable. */
+@media (max-width:650px){
+  #modal-root .modal-head{display:flex!important;flex-wrap:wrap!important;gap:10px!important;align-items:center!important;}
+  #modal-root .modal-head h2{flex:1 1 100%!important;min-width:0!important;}
+  #modal-root .modal-head .actions{display:flex!important;width:100%!important;flex:0 0 100%!important;justify-content:flex-end!important;flex-wrap:wrap!important;gap:8px!important;}
+  #modal-root .modal-foot{display:flex!important;width:100%!important;justify-content:flex-end!important;align-items:center!important;gap:8px!important;flex-wrap:wrap!important;position:sticky!important;bottom:0!important;padding:10px 0 2px!important;background:#fff!important;z-index:20!important;}
+  #modal-root .modal-foot .btn{display:inline-flex!important;visibility:visible!important;opacity:1!important;min-height:42px!important;flex:0 0 auto!important;}
+  #modal-root .modal{padding-bottom:12px!important;}
+}
