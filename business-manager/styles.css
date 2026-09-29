@@ -66,3 +66,10 @@
   #admin-app .modal{width:100%!important;max-width:100%!important;max-height:94vh!important;padding:15px!important;}
   #admin-app .modal-foot{position:sticky;bottom:0;background:#fff;padding-top:10px;flex-wrap:wrap;z-index:2;}
 }
+
+
+/* Mobile modal priority fix: keep document forms above the mobile navigation/header. */
+@media (max-width:650px){
+  #admin-app .modal-backdrop{z-index:1000!important;}
+  #admin-app .modal{position:relative!important;z-index:1001!important;max-height:calc(100dvh - 16px)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;}
+}
