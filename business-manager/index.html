@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Perfect Building | Business Manager</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="auth-gate" class="auth-gate" aria-labelledby="auth-title">
+  <form id="admin-login-form" class="auth-card">
+    <img src="assets/company-logo.png" alt="Perfect Building Contractor Ltd" class="auth-logo">
+    <div class="auth-eyebrow">PRIVATE ADMIN AREA</div>
+    <h1 id="auth-title">Admin Login</h1>
+    <p class="auth-copy">Sign in with the authorised company administrator account.</p>
+    <label for="login-email">Admin email</label>
+    <input id="login-email" type="email" autocomplete="username" required maxlength="254" placeholder="admin@example.com">
+    <label for="login-password">Password</label>
+    <input id="login-password" type="password" autocomplete="current-password" required>
+    <button id="login-submit" class="btn primary" type="submit">Sign in</button>
+    <p id="login-error" class="auth-error" role="alert"></p>
+    <a class="auth-home" href="../index.html">← Back to company website</a>
+  </form>
+</section>
+<div class="app-shell" id="admin-app" style="display:none">
+  <aside class="sidebar">
+    <div class="brand"><img class="brand-logo" src="assets/company-logo.png" alt="Perfect Building Contractor Ltd logo"><div><strong>PERFECT BUILDER</strong><small>CONTRACTOR LTD</small></div></div>
+    <nav>
+      <button class="nav active" data-view="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav" data-view="clients">♙ <span>Clients</span></button>
+      <button class="nav" data-view="projects">▤ <span>Projects</span></button>
+      <div class="nav-label">DOCUMENTS</div>
+      <button class="nav" data-view="documents">▧ <span>All Documents</span></button>
+      <button class="nav" data-view="payments">£ <span>Payments</span></button>
+      <button class="nav" data-view="quotations">▧ <span>Quotations</span></button>
+      <button class="nav" data-view="agreements">▤ <span>Agreements</span></button>
+      <button class="nav" data-view="invoices">▣ <span>VAT Invoices</span></button>
+      <button class="nav" data-view="taxreports">▤ <span>Tax Reports</span></button>
+      <div class="nav-label">SYSTEM</div>
+      <button class="nav" data-view="settings">⚙ <span>Settings & Connection</span></button>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span><span id="connection-label">Demo mode</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">PERFECT BUILDING CONTRACTOR LTD</div><h1 id="page-title">Dashboard</h1></div><div class="top-actions"><span class="vat-chip">VAT: 525 8586 56</span><button class="btn primary" id="quick-add">+ New document</button><button class="btn" id="header-sign-out" type="button">Sign out</button></div></header>
+    <section id="view" class="content"></section>
+  </main>
+</div>
+<div id="modal-root"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body></html>

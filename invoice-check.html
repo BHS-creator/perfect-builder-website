@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check Invoice | Perfect Building Contractor Ltd</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7f5;color:#20332d;font:15px Arial,Helvetica,sans-serif}
+header{background:#07583f;color:#fff;padding:22px 18px;border-bottom:6px solid #e8c34f;text-align:center}
+header h1{margin:0;font-size:21px;letter-spacing:.4px}header p{margin:6px 0 0;color:#e8c34f;font-size:13px}
+main{max-width:620px;margin:32px auto;padding:0 16px}.card{background:#fff;border:1px solid #dce5df;border-radius:14px;padding:24px;box-shadow:0 8px 24px #0c3b2510}
+h2{margin:0 0 8px;font-size:20px}.muted{color:#63756d;font-size:13px;line-height:1.5}
+label{display:block;font-weight:700;font-size:13px;margin:17px 0 6px}input{width:100%;padding:12px;border:1px solid #cbd7d0;border-radius:8px;font-size:15px}
+button{margin-top:18px;background:#07583f;color:#fff;border:0;border-radius:8px;padding:12px 18px;font-weight:700;font-size:14px;cursor:pointer;width:100%}
+button:disabled{opacity:.6;cursor:wait}.error{color:#a12626;margin-top:14px;font-size:13px}.result{margin-top:22px;display:none}
+.rows{display:grid;grid-template-columns:1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid #e7ede9}.rows:last-child{border-bottom:0}.rows b{text-align:right}.balance{background:#eaf5ee;border-radius:9px;padding:15px;margin-top:12px;display:flex;justify-content:space-between;gap:10px;font-weight:700;color:#07583f}.balance strong{font-size:22px}
+footer{text-align:center;color:#65766f;font-size:12px;padding:20px}
+</style></head><body><header><h1>PERFECT BUILDING CONTRACTOR LTD</h1><p>Client Invoice Portal · VAT No: 525 8586 56</p></header>
+<main><div style="margin-bottom:14px"><a href="index.html" style="display:inline-block;text-decoration:none;color:#07583f;font-weight:700">← Back to company website</a></div><section class="card"><h2>Check your invoice</h2><p class="muted">Enter the invoice number and the email address registered with your invoice to view the amount paid and the remaining balance.</p>
+<form id="lookup"><label for="number">Invoice number</label><input id="number" required maxlength="80" placeholder="e.g. INV-2026-0001">
+<label for="email">Registered email address</label><input id="email" type="email" required maxlength="254" placeholder="name@example.com">
+<button id="submit" type="submit">View invoice</button><div id="error" class="error" role="alert"></div></form>
+<div id="result" class="result" aria-live="polite"><h2>Invoice summary</h2><div id="details"></div></div></section></main>
+<footer>Perfect Building Contractor Ltd · perfectbuilders.uk · info@perfectbuilders.uk</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="invoice-portal.js"></script></body></html>
