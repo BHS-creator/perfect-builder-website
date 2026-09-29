@@ -37,14 +37,20 @@ async function syncLocalToSupabase(){
    if(error)throw error;
    existingDocs=data||[];
  }
- const existingDocIds=new Map(existingDocs.map(x=>[`${String(x.type||"").toLowerCase()}|${String(x.number||"").trim().toLowerCase()}`,x.id]));
- const docsToSync=docsLocal.map(x=>{
-   const key=`${String(x.type||"").toLowerCase()}|${String(x.number||"").trim().toLowerCase()}`;
-   return {...x,id:existingDocIds.get(key)||x.id||crypto.randomUUID(),owner_id:currentUserId,updated_at:now};
- });
+ // The database enforces uniqueness on (owner_id, number), not (owner_id, type, number).
+ // Match by document number so an old/local row can never collide with an existing server row.
+ const existingDocIds=new Map(existingDocs.map(x=>[String(x.number||"").trim().toLowerCase(),x.id]));
+ const docsByNumber=new Map();
+ for(const x of docsLocal){
+   const number=String(x.number||"").trim();
+   const key=number.toLowerCase();
+   const row={...x,id:existingDocIds.get(key)||x.id||crypto.randomUUID(),owner_id:currentUserId,updated_at:now};
+   if(key)docsByNumber.set(key,row); else docsByNumber.set(`__id_${row.id}`,row);
+ }
+ const docsToSync=[...docsByNumber.values()];
  if(clientsToSync.length){const {error}=await supabaseClient.from("clients").upsert(clientsToSync,{onConflict:"id"});if(error)throw error}
  if(projectsToSync.length){const {error}=await supabaseClient.from("projects").upsert(projectsToSync,{onConflict:"id"});if(error)throw error}
- if(docsToSync.length){const uniqueDocs=[...new Map(docsToSync.map(x=>[x.id,x])).values()];const {error}=await supabaseClient.from("documents").upsert(uniqueDocs,{onConflict:"id"});if(error)throw error}
+ if(docsToSync.length){const {error}=await supabaseClient.from("documents").upsert(docsToSync,{onConflict:"id"});if(error)throw error}
 }
 async function persist(kind,row){
  const base={...row,id:row.id||crypto.randomUUID(),created_at:row.created_at||new Date().toISOString(),updated_at:new Date().toISOString()};
