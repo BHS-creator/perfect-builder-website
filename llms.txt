@@ -3,7 +3,7 @@
 > Machine-readable business information for search and AI systems.
 
 ## Primary website
-https://www.perfectbuilders.uk/
+https://perfectbuilders.uk/
 
 ## Main services
 - House extensions
@@ -32,12 +32,12 @@ South Yorkshire
 West Yorkshire
 
 ## Useful pages
-- https://www.perfectbuilders.uk/services.html
-- https://www.perfectbuilders.uk/projects.html
-- https://www.perfectbuilders.uk/contact.html
-- https://www.perfectbuilders.uk/seo/faqs-sheffield.html
-- https://www.perfectbuilders.uk/seo/areas-we-cover.html
-- https://www.perfectbuilders.uk/seo/business-information.html
+- https://perfectbuilders.uk/services.html
+- https://perfectbuilders.uk/projects.html
+- https://perfectbuilders.uk/contact.html
+- https://perfectbuilders.uk/seo/faqs-sheffield.html
+- https://perfectbuilders.uk/seo/areas-we-cover.html
+- https://perfectbuilders.uk/seo/business-information.html
 
 ## Important
 This file is supplementary machine-readable information. It does not guarantee inclusion, ranking or citation by any search engine or AI system.
